@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { events, fixtures, schedule } from '../content'
 import { PageHeader } from '../components/ui'
+import BookingRequest from '../components/BookingRequest'
 
 interface CalEntry {
   time: string
@@ -208,6 +209,16 @@ export default function Calendar() {
           added by club admins; weekly training repeats from the schedule below. Hover any entry
           for full details.
         </p>
+
+        {/* book a slot */}
+        <h2 className="font-display text-2xl uppercase mt-14 mb-2 border-l-4 border-club-700 pl-4">
+          Book a Slot
+        </h2>
+        <p className="text-sm text-coal-500 mb-6 pl-5">
+          See a free slot on a pitch, the astro or the hall? Request it here — club teams and
+          external groups welcome.
+        </p>
+        <BookingRequest />
 
         {/* weekly training schedule */}
         <h2 className="font-display text-2xl uppercase mt-14 mb-6 border-l-4 border-club-700 pl-4">
