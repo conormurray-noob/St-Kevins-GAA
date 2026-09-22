@@ -3,14 +3,37 @@
 # Locally it saves straight to disk (`npm run cms`); in production it uses
 # Netlify Identity + Git Gateway and publishes in ~1 minute.
 
+# Editor logins via DecapBridge (invite users at decapbridge.com)
 backend:
   name: git-gateway
+  repo: conormurray-noob/St-Kevins-GAA
   branch: main
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/3ae27a45-b72d-49b7-a7df-e2fa49999ab4/pkce
+  auth_token_endpoint: /sites/3ae27a45-b72d-49b7-a7df-e2fa49999ab4/token
+  gateway_url: https://gateway.decapbridge.com
 
+  # Show who did what in the site's history
+  commit_messages:
+    create: Create {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    update: Update {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    delete: Delete {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    uploadMedia: Upload "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    deleteMedia: Delete "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
+
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+
+# Local editing (npm run cms) still works on localhost
 local_backend: true
 
 logo_url: /crest-clubzap.png
-site_url: /
+site_url: https://stkevinsgaa.netlify.app
 
 media_folder: 'public/uploads'
 public_folder: '/uploads'

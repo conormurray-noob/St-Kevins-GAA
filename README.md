@@ -65,10 +65,13 @@ so editor logins use **DecapBridge** (free) instead.
    unlimited and free).
 2. On [netlify.com](https://netlify.com) (free tier): **Add new site → Import
    from GitHub**. Build settings are read automatically from `netlify.toml`.
-3. Editor logins: create a free site at [decapbridge.com](https://decapbridge.com),
-   link it to the GitHub repo, and paste the `identity_url` and `gateway_url`
-   it gives you into the `backend:` block of `public/admin/config.yml`.
-   Invite editors by email from the DecapBridge dashboard.
+3. Editor logins: DONE — DecapBridge site linked to this repo (backend config
+   in `public/admin/config.yml`). Invite/remove editors by email at
+   [decapbridge.com](https://decapbridge.com) → Manage collaborators.
+   ⚠️ The GitHub access token given to DecapBridge expires **September 2027**
+   — regenerate it at github.com/settings/personal-access-tokens (Contents +
+   Pull requests, read/write, repo St-Kevins-GAA only) and paste the new one
+   into the DecapBridge site settings.
 4. Get Involved form: Netlify → Forms → enable, and add a notification email
    to the club secretary.
 5. The nightly fixtures/lotto sync (`.github/workflows/sync.yml`) starts
