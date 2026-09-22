@@ -1,0 +1,39 @@
+{
+  "events": [
+    {
+      "title": "Saints Bar Quiz Night",
+      "date": "2026-09-11",
+      "time": "20:30",
+      "venue": "Saints Bar and Restaurant",
+      "type": "Community"
+    },
+    {
+      "title": "Astro booking — Prosperous FC (external)",
+      "date": "2026-09-09",
+      "time": "19:00 – 20:00",
+      "venue": "AstroTurf Pitch",
+      "type": "Booking"
+    },
+    {
+      "title": "Pilates",
+      "date": "2026-09-15",
+      "time": "19:00",
+      "venue": "The Hall",
+      "type": "Community"
+    },
+    {
+      "title": "Bowls",
+      "date": "2026-09-16",
+      "time": "14:00",
+      "venue": "The Hall",
+      "type": "Community"
+    },
+    {
+      "title": "Club AGM",
+      "date": "2026-09-27",
+      "time": "19:00",
+      "venue": "Clubhouse",
+      "type": "Event"
+    }
+  ]
+}

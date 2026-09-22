@@ -1,0 +1,214 @@
+{
+  "fixtures": [
+    {
+      "competition": "2026 Manguard Plus Minor Football D Championship Group Phase - Round 3",
+      "team": "Minor",
+      "home": "St. Edwards",
+      "away": "St. Kevin's",
+      "date": "Wed 2 Sep",
+      "iso": "2026-09-02",
+      "time": "20:00",
+      "venue": "Rathcoffey"
+    },
+    {
+      "competition": "U16 Championship Division 6 - Round 2",
+      "team": "U16",
+      "home": "St. Kevin's",
+      "away": "Ballymore Eustace",
+      "date": "Thu 3 Sep",
+      "iso": "2026-09-03",
+      "time": "18:45",
+      "venue": "St Kevin's"
+    },
+    {
+      "competition": "Life Credit Union U14 C Football Championship Stage 2 - Cup - Round 2",
+      "team": "U14",
+      "home": "St. Kevin's",
+      "away": "Newtown Gaels",
+      "date": "Thu 3 Sep",
+      "iso": "2026-09-03",
+      "time": "20:00",
+      "venue": "St Kevin's"
+    },
+    {
+      "competition": "2026 Osprey Hotel & Spa Reserve 2 Football B Championship Group 1 - Round 3",
+      "team": "Reserves",
+      "home": "Eadestown",
+      "away": "St. Kevin's",
+      "date": "Fri 4 Sep",
+      "iso": "2026-09-04",
+      "time": "19:00",
+      "venue": "Eadestown"
+    },
+    {
+      "competition": "2026 Tom Cross Junior Football Championship Group A - Round 3",
+      "team": "Junior",
+      "home": "Rathcoffey",
+      "away": "St. Kevin's",
+      "date": "Sat 5 Sep",
+      "iso": "2026-09-05",
+      "time": "16:30",
+      "venue": "Clane"
+    },
+    {
+      "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Group 2 - Round 3",
+      "team": "Reserves",
+      "home": "St. Kevin's",
+      "away": "Kill",
+      "date": "Mon 7 Sep",
+      "iso": "2026-09-07",
+      "time": "20:00",
+      "venue": "St Kevin's"
+    },
+    {
+      "competition": "U16 Championship Division 6 - Round 3",
+      "team": "U16",
+      "home": "Teach an Dá Mhíle",
+      "away": "St. Kevin's",
+      "date": "Thu 10 Sep",
+      "iso": "2026-09-10",
+      "time": "19:00",
+      "venue": "Two Mile House GAA Grounds"
+    },
+    {
+      "competition": "Life Credit Union U12 D Football Competition Stage 2 - Cup - Round 3",
+      "team": "U12",
+      "home": "St. Kevin's",
+      "away": "Naas",
+      "date": "Fri 11 Sep",
+      "iso": "2026-09-11",
+      "time": "18:30",
+      "venue": "St Kevin's"
+    },
+    {
+      "competition": "Life Credit Union U16 B Football Competition Stage 2 - Shield - Round 3",
+      "team": "U16",
+      "home": "St. Kevin's",
+      "away": "Moorefield",
+      "date": "Sat 12 Sep",
+      "iso": "2026-09-12",
+      "time": "12:00",
+      "venue": "St Kevin's"
+    },
+    {
+      "competition": "U14 Championship - Division 7 - Round 4",
+      "team": "U14",
+      "home": "St. Kevin's",
+      "away": "Athgarvan",
+      "date": "Sat 12 Sep",
+      "iso": "2026-09-12",
+      "time": "13:00",
+      "venue": "TBC"
+    },
+    {
+      "competition": "U14 Championship - Division 7 - Round 5",
+      "team": "U14",
+      "home": "Rheban Grange Ogs",
+      "away": "St. Kevin's",
+      "date": "Sat 19 Sep",
+      "iso": "2026-09-19",
+      "time": "13:00",
+      "venue": "TBC"
+    },
+    {
+      "competition": "Life Credit Union U14 C Football Championship Stage 2 - Cup - Round 3",
+      "team": "U14",
+      "home": "St. Kevin's",
+      "away": "St. Edwards",
+      "date": "Sun 20 Sep",
+      "iso": "2026-09-20",
+      "time": "11:30",
+      "venue": "St Kevin's"
+    }
+  ],
+  "results": [
+    {
+      "competition": "U14 Championship - Division 7 - Round 2",
+      "team": "U14",
+      "home": "Robertstown",
+      "away": "St. Kevin's",
+      "date": "Sat 29 Aug",
+      "iso": "2026-08-29",
+      "venue": "Robertstown",
+      "homeScore": "1-8",
+      "awayScore": "5-11"
+    },
+    {
+      "competition": "U16 Championship Division 6 - Round 1",
+      "team": "U16",
+      "home": "Milltown",
+      "away": "St. Kevin's",
+      "date": "Thu 27 Aug",
+      "iso": "2026-08-27",
+      "venue": "Miltown",
+      "homeScore": "2-5",
+      "awayScore": "6-16"
+    },
+    {
+      "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Group 2 - Round 2",
+      "team": "Reserves",
+      "home": "St. Kevin's",
+      "away": "Monasterevan",
+      "date": "Mon 24 Aug",
+      "iso": "2026-08-24",
+      "venue": "St Kevin's",
+      "homeScore": "3-11",
+      "awayScore": "2-12"
+    },
+    {
+      "competition": "2026 Tom Cross Junior Football Championship Group A - Round 2",
+      "team": "Junior",
+      "home": "Rheban",
+      "away": "St. Kevin's",
+      "date": "Sat 22 Aug",
+      "iso": "2026-08-22",
+      "venue": "Round Towers GFC",
+      "homeScore": "1-11",
+      "awayScore": "3-25"
+    },
+    {
+      "competition": "U14 Championship - Division 7 - Round 1",
+      "team": "U14",
+      "home": "St. Kevin's",
+      "away": "Ellistown",
+      "date": "Sat 22 Aug",
+      "iso": "2026-08-22",
+      "venue": "St Kevin's",
+      "homeScore": "3-6",
+      "awayScore": "8-11"
+    },
+    {
+      "competition": "Life Credit Union U14 C Football Championship Stage 2 - Cup - Round 1",
+      "team": "U14",
+      "home": "Raheens",
+      "away": "St. Kevin's",
+      "date": "Thu 20 Aug",
+      "iso": "2026-08-20",
+      "venue": "Raheens GAA",
+      "homeScore": "6-15",
+      "awayScore": "2-10"
+    },
+    {
+      "competition": "2026 Manguard Plus Minor Football D Championship Group Phase - Round 2",
+      "team": "Minor",
+      "home": "Rheban",
+      "away": "St. Kevin's",
+      "date": "Wed 19 Aug",
+      "iso": "2026-08-19",
+      "venue": "Rheban",
+      "homeScore": "0-13",
+      "awayScore": "1-15"
+    },
+    {
+      "competition": "NAAS RACECOURSE JUNIOR &quot;C&quot; CHAMPIONSHIP 2026 - B - Round 2",
+      "team": "Junior",
+      "home": "St. Kevin's",
+      "away": "Grangenolvin",
+      "date": "Tue 18 Aug",
+      "iso": "2026-08-18",
+      "venue": "St Kevin's",
+      "homeScore": "5-29",
+      "awayScore": "0-1"
+    }
+  ]
+}

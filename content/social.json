@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "platform": "twitter",
+      "author": "CLG Naomh Caoimhín",
+      "handle": "@StKevinsGfc",
+      "date": "2h",
+      "text": "FT: St. Kevin's 1-14 Rathangan 0-16. WE'RE IN THE COUNTY FINAL! 🔴⚫ Unbelievable scenes in Newbridge. Thank you to everyone who travelled!",
+      "likes": 214,
+      "comments": 31
+    },
+    {
+      "platform": "instagram",
+      "author": "St. Kevin's GAA",
+      "handle": "@stkevinsgfc",
+      "date": "1d",
+      "text": "County final bound 🏆 Squad photo before Sunday's semi. Swipe for the celebrations →",
+      "image": "/placeholders/ph-6.svg",
+      "likes": 542,
+      "comments": 48
+    },
+    {
+      "platform": "twitter",
+      "author": "CLG Naomh Caoimhín",
+      "handle": "@StKevinsGfc",
+      "date": "3d",
+      "text": "🎟️ LOTTO | No jackpot winner this week — next week we play for €5,800! Lucky dip winners announced on the website. Play online before 6pm Sunday.",
+      "likes": 42,
+      "comments": 3
+    },
+    {
+      "platform": "instagram",
+      "author": "St. Kevin's GAA",
+      "handle": "@stkevinsgfc",
+      "date": "4d",
+      "text": "Friday nights at the Academy 🌟 U8s and U10s finishing the season in style.",
+      "image": "/placeholders/ph-7.svg",
+      "likes": 318,
+      "comments": 22
+    },
+    {
+      "platform": "facebook",
+      "author": "St Kevins GAA Donadea",
+      "handle": "St Kevins GAA",
+      "date": "5d",
+      "text": "The new club walkway is now open to the public every day from 7am–10pm. A huge thank you to all the volunteers and sponsors who made it happen. 🔴⚫",
+      "image": "/placeholders/ph-8.svg",
+      "likes": 187,
+      "comments": 26
+    },
+    {
+      "platform": "twitter",
+      "author": "CLG Naomh Caoimhín",
+      "handle": "@StKevinsGfc",
+      "date": "6d",
+      "text": "Well done to our U14 girls, crowned Division 2 league champions after an unbeaten season! 👏 Report and photos on the club website.",
+      "likes": 156,
+      "comments": 12
+    }
+  ]
+}

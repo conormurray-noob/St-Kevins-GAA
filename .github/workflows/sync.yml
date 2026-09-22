@@ -1,0 +1,38 @@
+name: Nightly data sync
+
+# Pulls real fixtures/results from kildaregaa.ie and lotto results from
+# stkevinsgfc.ie every night. If anything changed, the commit triggers a
+# Netlify rebuild, so the site keeps itself up to date with zero clicks.
+on:
+  schedule:
+    - cron: '0 3 * * *' # 03:00 UTC nightly
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # The sync scripts use only the Node standard library — no install needed
+      - name: Sync fixtures & results from Kildare GAA
+        run: node scripts/sync-fixtures.mjs
+
+      - name: Sync lotto results from stkevinsgfc.ie
+        run: node scripts/sync-lotto.mjs
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "club-data-sync"
+          git config user.email "actions@github.com"
+          git add content/fixtures.json content/lotto.json
+          git diff --cached --quiet && echo "No changes tonight" && exit 0
+          git commit -m "Nightly sync: fixtures & lotto"
+          git push

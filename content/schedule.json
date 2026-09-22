@@ -1,0 +1,13 @@
+{
+  "sessions": [
+    { "day": "Monday", "team": "Senior Men", "time": "19:30 – 21:00", "venue": "Main Pitch", "coach": "D. Byrne" },
+    { "day": "Monday", "team": "U12 Boys & Girls", "time": "18:15 – 19:15", "venue": "Astro", "coach": "S. Kelly" },
+    { "day": "Tuesday", "team": "Senior Ladies", "time": "19:30 – 21:00", "venue": "Main Pitch", "coach": "M. Farrell" },
+    { "day": "Tuesday", "team": "U14 Boys", "time": "18:30 – 19:30", "venue": "Pitch 2", "coach": "P. Dunne" },
+    { "day": "Wednesday", "team": "Reserves / Junior B", "time": "19:30 – 21:00", "venue": "Main Pitch", "coach": "C. Nolan" },
+    { "day": "Thursday", "team": "Senior Men", "time": "19:30 – 21:00", "venue": "Main Pitch", "coach": "D. Byrne" },
+    { "day": "Thursday", "team": "U16 Girls", "time": "18:30 – 19:30", "venue": "Pitch 2", "coach": "A. Murphy" },
+    { "day": "Friday", "team": "U8 / U10 Academy", "time": "18:00 – 19:00", "venue": "Astro", "coach": "Academy Team" },
+    { "day": "Saturday", "team": "Gaelic4Mothers&Others", "time": "10:00 – 11:00", "venue": "Astro", "coach": "L. Cummins" }
+  ]
+}

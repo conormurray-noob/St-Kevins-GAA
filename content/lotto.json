@@ -1,0 +1,240 @@
+{
+  "currentJackpot": "€5,800",
+  "nextDraw": "July 14, 2026",
+  "entriesClose": "Entries close 6pm on draw night",
+  "playUrl": "https://stkevinsgfckildare.clubzap.com/categories/lotto/products",
+  "draws": [
+    {
+      "date": "Tuesday 7 July 2026",
+      "numbers": [
+        6,
+        8,
+        13,
+        14
+      ],
+      "jackpot": "€5,600",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "Maureen Malone (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Tracy Higgins (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Mary McCormack c/o Speedy",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Donal Keane c/o Donal Keane",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
+    {
+      "date": "Tuesday 30 June 2026",
+      "numbers": [
+        3,
+        5,
+        7,
+        23
+      ],
+      "jackpot": "€5,400",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "Ann Johnson c/o Ann Johnson",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Aine Browne (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Kathleen Smullen (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Mary McCormack c/o Speedy",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
+    {
+      "date": "Tuesday 23 June 2026",
+      "numbers": [
+        6,
+        14,
+        16,
+        23
+      ],
+      "jackpot": "€5,200",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "Cáitín Tyrrell (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Noreen Delaney (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Brreda Heffernan c/o Toney Kenny",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Zoe Carew c/o Trevor Carey",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
+    {
+      "date": "Tuesday 16 June 2026",
+      "numbers": [
+        6,
+        15,
+        16,
+        24
+      ],
+      "jackpot": "€5,000",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "Declan Flaherty (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Mary Kenny (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Sean Waldren c/o Jim O'Donnell",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Michael McDonald c/o Speedy",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
+    {
+      "date": "Tuesday 9 June 2026",
+      "numbers": [
+        10,
+        14,
+        26,
+        28
+      ],
+      "jackpot": "€4,800",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "Isabella and Rhett Gannon c/o Errol Gannon",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Rose Kenny (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Peg Browne c/o Paddy Browne",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Georgina Cox (Online)",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
+    {
+      "date": "Tuesday 2 June 2026",
+      "numbers": [
+        3,
+        10,
+        13,
+        28
+      ],
+      "jackpot": "€4,600",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "Bridget Ryan (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Louise Dee (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Joe Fulton c/o Ward's Shop",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Ger O'Brien c/o Jim O'Donnell",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
+    {
+      "date": "Tuesday 26 May 2026",
+      "numbers": [
+        6,
+        16,
+        18,
+        19
+      ],
+      "jackpot": "€4,400",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "Philiph Reilly (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Tadhg Donovan (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Ger Kenna c/o Ger Kenna",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Rose Kenna c/o Ger Kenna",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
+    {
+      "date": "Tuesday 19 May 2026",
+      "numbers": [
+        2,
+        4,
+        6,
+        22
+      ],
+      "jackpot": "€4,200",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "Tara and Grace c/o Paddy Browne",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Breda Gordon c/o Breda Gordon",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Aileen Saunders (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "John Aungier (Online)",
+          "prize": "Lucky Dip"
+        }
+      ]
+    }
+  ]
+}

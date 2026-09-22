@@ -1,0 +1,67 @@
+/* Styles for the Decap live-preview pane — mirrors the real site's article look */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Archivo+Black&display=swap');
+
+body {
+  font-family: 'Archivo', system-ui, sans-serif;
+  color: #1c1d20;
+  background: #f6f6f7;
+  margin: 0;
+}
+
+.article-preview {
+  max-width: 720px;
+  margin: 24px auto;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(17, 17, 20, 0.12);
+}
+
+.article-preview img.hero {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  background: #e2e3e5;
+}
+
+.article-preview .inner {
+  padding: 32px 40px 40px;
+}
+
+.article-preview .badge {
+  display: inline-block;
+  background: #c8102e;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.article-preview .date {
+  color: #a0a2a8;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.article-preview h1 {
+  font-family: 'Archivo Black', 'Archivo', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.1;
+  margin: 16px 0 0;
+}
+
+.article-preview .body {
+  margin-top: 20px;
+  color: #4c4e55;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.article-preview .body p {
+  margin: 0 0 16px;
+}

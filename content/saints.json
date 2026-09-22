@@ -1,0 +1,50 @@
+{
+  "intro": "Saints Bar and Restaurant at St. Kevin's clubhouse is now open — good food, a warm welcome, and the match always on. Open to members and the wider community alike.",
+  "hours": "Sample opening hours below — to be confirmed by the bar. Check the club's socials for this week's times.",
+  "openingHours": [
+    { "days": "Monday – Thursday", "times": "16:00 – 23:00" },
+    { "days": "Friday", "times": "16:00 – 00:30" },
+    { "days": "Saturday", "times": "12:00 – 00:30" },
+    { "days": "Sunday", "times": "12:00 – 23:00" },
+    { "days": "Kitchen (Wed – Sun)", "times": "12:30 – 21:00" }
+  ],
+  "managers": [
+    { "name": "Keith Fitzharris", "role": "Manager", "phone": "Phone TBC" },
+    { "name": "Mark Grace", "role": "Manager", "phone": "Phone TBC" }
+  ],
+  "photos": [
+    { "image": "/placeholders/ph-12.svg", "caption": "The bar" },
+    { "image": "/placeholders/ph-1.svg", "caption": "The restaurant floor" },
+    { "image": "/placeholders/ph-2.svg", "caption": "Sunday lunch" },
+    { "image": "/placeholders/ph-3.svg", "caption": "Function space" },
+    { "image": "/placeholders/ph-4.svg", "caption": "Match day at Saints Bar" },
+    { "image": "/placeholders/ph-5.svg", "caption": "The terrace" }
+  ],
+  "menuNote": "Sample menu — the current menu will be posted here. Ask about daily specials and the Sunday carvery.",
+  "menu": [
+    {
+      "section": "Starters",
+      "items": [
+        { "name": "Soup of the Day", "description": "With brown bread", "price": "€6.50" },
+        { "name": "Chicken Wings", "description": "Hot sauce or BBQ, blue cheese dip", "price": "€9.50" },
+        { "name": "Garlic Mushrooms", "description": "Crumbed, with aioli", "price": "€8.00" }
+      ]
+    },
+    {
+      "section": "Mains",
+      "items": [
+        { "name": "Roast of the Day", "description": "With mash, seasonal veg and gravy", "price": "€16.50" },
+        { "name": "Beer-Battered Fish & Chips", "description": "Mushy peas, tartare sauce", "price": "€17.00" },
+        { "name": "Saints Burger", "description": "Bacon, cheddar, house sauce, skinny fries", "price": "€16.00" },
+        { "name": "Chicken Curry", "description": "Basmati rice and chips", "price": "€15.50" }
+      ]
+    },
+    {
+      "section": "Desserts",
+      "items": [
+        { "name": "Apple Crumble", "description": "With custard or ice cream", "price": "€7.00" },
+        { "name": "Sticky Toffee Pudding", "description": "Butterscotch sauce", "price": "€7.50" }
+      ]
+    }
+  ]
+}

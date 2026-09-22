@@ -1,0 +1,126 @@
+{
+  "vision": "Our vision is a sustainable, community-based, volunteer-led club where as many as possible participate in GAA, LGFA and club activities, for as long as possible.",
+  "values": "Community Identity · Inclusiveness · Respect · Player Welfare · Teamwork · Volunteerism",
+  "pillars": [
+    {
+      "title": "Games",
+      "tagline": "Providing the best possible games experience for players and spectators",
+      "objectives": [
+        {
+          "title": "Developing the games",
+          "text": "Make Gaelic football as enjoyable as possible so that players stay playing and spectators enjoy watching games — growing qualified coaches, re-establishing the Go Games ethos of fair game time for every child, and building a 'play and stay' culture from U12 to U23."
+        },
+        {
+          "title": "Providing games",
+          "text": "Ensure players have an adequate number of meaningful games and an appropriate game-to-training ratio, with additional teams established at all ages and grades so every player gets playing opportunities regardless of ability."
+        },
+        {
+          "title": "Investment",
+          "text": "Invest additional resources to safeguard the growth of St Kevin's, its teams and its membership, with a data-driven approach to tracking participation."
+        },
+        {
+          "title": "Collaborating with schools",
+          "text": "Foster and consolidate our relationship with local primary and second-level schools to build player pathways, manage player workload, and optimise the pipeline of talent available to the club."
+        }
+      ]
+    },
+    {
+      "title": "People",
+      "tagline": "Unrivalled role support and personal development for players, coaches and volunteers",
+      "objectives": [
+        {
+          "title": "Growing players",
+          "text": "Enable players to reach their potential through high-quality coaching, player supports and games opportunities — aligned to the Gaelic Games Player Pathway, with player profiling and styles of play to suit our players."
+        },
+        {
+          "title": "Sustaining volunteerism",
+          "text": "Reduce the administrative burden on volunteers, streamline tasks, provide training, and build a pipeline of future role holders — with more opportunities for young people to volunteer and lead."
+        },
+        {
+          "title": "Continuous development",
+          "text": "Engage with all centrally available GAA learning resources for quality learning experiences for coaches, officers, players and volunteers, including TY and Gaisce placements in club activity."
+        }
+      ]
+    },
+    {
+      "title": "Club & Community",
+      "tagline": "Supporting club and community survival and growth",
+      "objectives": [
+        {
+          "title": "Championing diversity and inclusion",
+          "text": "Foster an inclusive culture — expanding the Allstars initiative to other club teams and positioning St Kevin's as the national standard for the GAA for All model."
+        },
+        {
+          "title": "Community partnerships",
+          "text": "Formalise engagement with other community groups on health and wellbeing, physical activity and social inclusion — working towards Healthy Club and Green Club status."
+        },
+        {
+          "title": "Growing the GAA locally",
+          "text": "Grow Gaelic games locally through our close community connection, sharing players, members and interests with Coill Dubh Hurling and Camogie clubs."
+        }
+      ]
+    },
+    {
+      "title": "Communication",
+      "tagline": "Striving for a more connected club",
+      "objectives": [
+        {
+          "title": "Proactive communications",
+          "text": "Develop a proactive communications culture — up-to-date information in live time, an online club calendar reflecting all sporting and social activity, and telling the St Kevin's story in a contemporary way."
+        },
+        {
+          "title": "Connecting with members",
+          "text": "A greater connection with current and past members — a member welcome pack, better access to club notes, a redesigned website, and reconnecting with past 'first club' members worldwide."
+        },
+        {
+          "title": "Engaging young people",
+          "text": "Give young people opportunities to develop as leaders and have their voices heard — through Future Leaders, the Dermot Earley Youth Leadership initiative and club leadership programmes."
+        },
+        {
+          "title": "Irish language & culture",
+          "text": "Celebrate Irish language and cultural activities through structures like Scór na nÓg, and partner with local performance arts groups."
+        }
+      ]
+    },
+    {
+      "title": "Governance & Operations",
+      "tagline": "Modernising our governance and operations",
+      "objectives": [
+        {
+          "title": "One Club",
+          "text": "Maximise our One Club structure across all codes — Gaelic football, LGFA, and ongoing support for hurling and camogie in the community — with fair facilities allocation and coordinated fundraising."
+        },
+        {
+          "title": "Safeguarding people",
+          "text": "Strengthen policy compliance and risk management to safeguard the club, community and all members, particularly children — with full statutory compliance and biennial safeguarding risk assessments."
+        },
+        {
+          "title": "Investing in digital & data",
+          "text": "An innovative digital strategy for communications, social media, data analytics and cloud technology — tracking participation and supporting the member growth strategy."
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "tagline": "Ensuring the sustainability of St Kevin's finances and facilities",
+      "objectives": [
+        {
+          "title": "Re-balancing club resourcing",
+          "text": "Refocus finance and fundraising on the growth of teams and membership — appointing a Registrar, reviewing membership types, and moving all membership activity to Foireann."
+        },
+        {
+          "title": "Financial sustainability",
+          "text": "Standardised financial systems across the Club and Bar, ring-fenced team budgets, grant applications, and growing commercial income through sponsorship and business partnerships."
+        },
+        {
+          "title": "Safe and sustainable facilities",
+          "text": "Develop and manage club facilities sustainably, exploring shared resourcing with other sporting and community groups, with a maintenance working group overseeing upkeep."
+        },
+        {
+          "title": "Environmental sustainability",
+          "text": "Implement the Green Clubs Programme and equip members to operate in an environmentally sustainable way, mitigating the effects of climate change on the club and community."
+        }
+      ]
+    }
+  ]
+}

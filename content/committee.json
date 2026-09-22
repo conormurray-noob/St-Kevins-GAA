@@ -1,0 +1,21 @@
+{
+  "members": [
+    { "role": "Chairman", "name": "John Noone", "email": "chairperson.stkevins.kildare@gaa.ie" },
+    { "role": "Vice Chairman", "name": "Noel Delaney", "email": "" },
+    { "role": "Secretary", "name": "Sinéad Heneghan", "email": "secretary.stkevins.kildare@gaa.ie" },
+    { "role": "Treasurer", "name": "Regina Moore", "email": "treasurer.stkevins.kildare@gaa.ie" },
+    { "role": "Treasurer", "name": "Teresa Noone", "email": "" },
+    { "role": "Child Welfare Officer", "name": "Celine Casey", "email": "childrensofficer@stkevins.kildare.gaa.ie" },
+    { "role": "PRO", "name": "Caroline McGivergan", "email": "communications@stkevins.kildare.gaa.ie" },
+    { "role": "Communications", "name": "Errol Gannon", "email": "communications@stkevins.kildare.gaa.ie" },
+    { "role": "Development Officer", "name": "Noel Delaney", "email": "" },
+    { "role": "LGFA Chairperson", "name": "Ann Marie Dunne", "email": "stkevins.kildare@lgfa.ie" },
+    { "role": "LGFA Secretary", "name": "Éilis Cox", "email": "stkevins.kildare@lgfa.ie" },
+    { "role": "Oifigeach na Gaeilge", "name": "Sinéad Uí Nuanáin", "email": "" },
+    { "role": "Players' Representative", "name": "Conor Murray", "email": "" },
+    { "role": "Committee Member", "name": "Donal Keane", "email": "" },
+    { "role": "Committee Member", "name": "Seán Ward", "email": "" },
+    { "role": "Committee Member", "name": "Damian Reilly", "email": "" },
+    { "role": "Committee Member", "name": "Tomás McLoughlin", "email": "" }
+  ]
+}

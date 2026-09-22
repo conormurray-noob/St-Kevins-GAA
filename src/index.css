@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Archivo+Black&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Archivo Black', 'Archivo', ui-sans-serif, system-ui, sans-serif;
+
+  /* Club colours — St. Kevin's red & black */
+  --color-club-50: #fef2f3;
+  --color-club-100: #fde3e5;
+  --color-club-200: #fbcdd1;
+  --color-club-300: #f7a9b0;
+  --color-club-400: #f17784;
+  --color-club-500: #e64d5d;
+  --color-club-600: #d22e44;
+  --color-club-700: #c8102e;
+  --color-club-800: #941e2e;
+  --color-club-900: #7f1d2c;
+  --color-club-950: #460b13;
+
+  --color-coal-50: #f6f6f7;
+  --color-coal-100: #e2e3e5;
+  --color-coal-200: #c5c6ca;
+  --color-coal-300: #a0a2a8;
+  --color-coal-400: #7c7e85;
+  --color-coal-500: #61636b;
+  --color-coal-600: #4c4e55;
+  --color-coal-700: #3f4046;
+  --color-coal-800: #2a2b2f;
+  --color-coal-900: #1c1d20;
+  --color-coal-950: #111114;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-coal-900 antialiased;
+}
+
+/* Diagonal sash motif from the club crest */
+.sash-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0px,
+    transparent 18px,
+    rgba(200, 16, 46, 0.9) 18px,
+    rgba(200, 16, 46, 0.9) 26px
+  );
+}
+
+.pitch-lines {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+}

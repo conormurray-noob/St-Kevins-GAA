@@ -1,0 +1,392 @@
+# Decap CMS configuration for St. Kevin's GAA
+# The sidebar mirrors the website: one entry per page/section of the site.
+# Locally it saves straight to disk (`npm run cms`); in production it uses
+# Netlify Identity + Git Gateway and publishes in ~1 minute.
+
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+logo_url: /crest-clubzap.png
+site_url: /
+
+media_folder: 'public/uploads'
+public_folder: '/uploads'
+
+collections:
+  - name: news
+    label: '📰 News'
+    label_singular: 'News Article'
+    description: 'Match reports and club news. The newest article with "Feature on Home Page" ticked becomes the big story on the home page.'
+    folder: 'content/news'
+    format: json
+    extension: json
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: 'Headline', widget: string }
+      - { name: date, label: 'Date', widget: datetime }
+      - name: category
+        label: 'Category'
+        widget: select
+        options: ['Football', 'Ladies Football', 'Juvenile', 'Club', 'Lotto', 'Fundraising']
+      - { name: image, label: 'Photo', widget: image }
+      - name: excerpt
+        label: 'Short Summary'
+        widget: text
+        hint: 'One or two sentences shown on the news cards.'
+      - name: featured
+        label: 'Feature on Home Page'
+        widget: boolean
+        default: false
+        required: false
+      - name: body
+        label: 'Article Text'
+        widget: text
+        hint: 'Write plain paragraphs. Leave an empty line between paragraphs.'
+
+  - name: lotto
+    label: '🎟 Club Lotto'
+    description: 'Update the jackpot and add each week''s draw at the top of the list. (Or let the automatic Tuesday sync do it.)'
+    files:
+      - name: lotto
+        label: 'Lotto Page'
+        file: 'content/lotto.json'
+        fields:
+          - { name: currentJackpot, label: 'Current Jackpot', widget: string, hint: 'e.g. €5,800' }
+          - { name: nextDraw, label: 'Next Draw', widget: string, hint: 'e.g. Tuesday 14 July, 8pm' }
+          - { name: entriesClose, label: 'Entry Deadline', widget: string }
+          - { name: playUrl, label: 'Play Online Link', widget: string }
+          - name: draws
+            label: 'Draw Results (newest first)'
+            label_singular: 'Draw'
+            widget: list
+            fields:
+              - { name: date, label: 'Draw Date', widget: string, hint: 'e.g. Tuesday 7 July 2026' }
+              - name: numbers
+                label: 'Winning Numbers'
+                widget: list
+                field: { name: number, label: 'Number', widget: number, value_type: int }
+              - { name: jackpot, label: 'Jackpot That Week', widget: string }
+              - { name: jackpotWon, label: 'Jackpot Won?', widget: boolean, default: false, required: false }
+              - name: winners
+                label: 'Lucky Dip Winners'
+                widget: list
+                fields:
+                  - { name: name, label: 'Winner', widget: string }
+                  - { name: prize, label: 'Prize', widget: string }
+
+  - name: calendar
+    label: '📅 Calendar Events'
+    description: 'One-off events and facility bookings shown on the Club Calendar — quiz nights, AGM, astro bookings. Matches and weekly training appear automatically.'
+    files:
+      - name: events
+        label: 'Events & Bookings'
+        file: 'content/events.json'
+        fields:
+          - name: events
+            label: 'Events'
+            label_singular: 'Event'
+            widget: list
+            fields:
+              - { name: title, label: 'Title', widget: string }
+              - { name: date, label: 'Date', widget: datetime, format: 'YYYY-MM-DD', time_format: false }
+              - { name: time, label: 'Time', widget: string, required: false, hint: 'e.g. 19:00 or 19:00 – 20:00' }
+              - { name: venue, label: 'Location', widget: string, required: false, hint: 'Main Pitch, Astro, Hall, Saints Bar… (sets the colour on the calendar)' }
+              - name: type
+                label: 'Type'
+                widget: select
+                options: ['Event', 'Booking', 'Community']
+
+  - name: games
+    label: '🏐 Fixtures & Results'
+    description: 'Normally filled automatically from the Kildare GAA website — only edit for challenge games or corrections, and note the next sync overwrites manual changes.'
+    files:
+      - name: fixtures
+        label: 'Fixtures & Results'
+        file: 'content/fixtures.json'
+        fields:
+          - name: fixtures
+            label: 'Upcoming Fixtures'
+            label_singular: 'Fixture'
+            widget: list
+            fields:
+              - { name: competition, label: 'Competition', widget: string }
+              - { name: team, label: 'Our Team', widget: string, hint: 'e.g. Senior Men, U16 Boys' }
+              - { name: home, label: 'Home Team', widget: string }
+              - { name: away, label: 'Away Team', widget: string }
+              - { name: date, label: 'Date shown', widget: string, hint: 'e.g. Sat 12 July' }
+              - { name: iso, label: 'Calendar date', widget: string, required: false, hint: 'YYYY-MM-DD — needed for the club calendar' }
+              - { name: time, label: 'Throw-in', widget: string, hint: 'e.g. 19:00' }
+              - { name: venue, label: 'Venue', widget: string }
+          - name: results
+            label: 'Recent Results'
+            label_singular: 'Result'
+            widget: list
+            fields:
+              - { name: competition, label: 'Competition', widget: string }
+              - { name: team, label: 'Our Team', widget: string }
+              - { name: home, label: 'Home Team', widget: string }
+              - { name: away, label: 'Away Team', widget: string }
+              - { name: date, label: 'Date', widget: string }
+              - { name: venue, label: 'Venue', widget: string }
+              - { name: homeScore, label: 'Home Score', widget: string, hint: 'e.g. 1-14' }
+              - { name: awayScore, label: 'Away Score', widget: string, hint: 'e.g. 0-16' }
+
+  - name: training
+    label: '🏋️ Training Schedule'
+    description: 'The weekly training grid. Sessions repeat every week on the calendar until removed.'
+    files:
+      - name: schedule
+        label: 'Weekly Schedule'
+        file: 'content/schedule.json'
+        fields:
+          - name: sessions
+            label: 'Training Sessions'
+            label_singular: 'Session'
+            widget: list
+            fields:
+              - name: day
+                label: 'Day'
+                widget: select
+                options: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+              - { name: team, label: 'Team', widget: string }
+              - { name: time, label: 'Time', widget: string, hint: 'e.g. 19:30 – 21:00' }
+              - { name: venue, label: 'Location', widget: string, hint: 'Main Pitch, Astro, Pitch 2, Hall…' }
+              - { name: coach, label: 'Coach', widget: string }
+
+  - name: gallery
+    label: '📷 Photo Gallery'
+    description: 'Photos on the Gallery page. Click a photo''s image field to upload from your phone or computer.'
+    files:
+      - name: gallery
+        label: 'Gallery'
+        file: 'content/gallery.json'
+        fields:
+          - name: images
+            label: 'Photos'
+            label_singular: 'Photo'
+            widget: list
+            fields:
+              - { name: image, label: 'Photo', widget: image }
+              - { name: caption, label: 'Caption', widget: string }
+
+  - name: socialwall
+    label: '💬 Social Wall'
+    description: 'The posts shown on the Social page (until live Instagram/X embeds are wired in).'
+    files:
+      - name: social
+        label: 'Social Posts'
+        file: 'content/social.json'
+        fields:
+          - name: posts
+            label: 'Posts'
+            label_singular: 'Post'
+            widget: list
+            fields:
+              - name: platform
+                label: 'Platform'
+                widget: select
+                options: ['twitter', 'instagram', 'facebook']
+              - { name: author, label: 'Account Name', widget: string }
+              - { name: handle, label: 'Handle', widget: string }
+              - { name: date, label: 'When', widget: string, hint: 'e.g. 2h, 3d' }
+              - { name: text, label: 'Post Text', widget: text }
+              - { name: image, label: 'Photo', widget: image, required: false }
+              - { name: likes, label: 'Likes', widget: number, value_type: int, default: 0 }
+              - { name: comments, label: 'Comments', widget: number, value_type: int, default: 0 }
+
+  - name: saintsbar
+    label: '🍽 Saints Bar & Restaurant'
+    description: 'Everything on the Saints Bar and Restaurant page — hours, photos, menu, and the managers'' contact details.'
+    files:
+      - name: saints
+        label: 'Saints Bar Page'
+        file: 'content/saints.json'
+        fields:
+          - { name: intro, label: 'Page Introduction', widget: text }
+          - { name: hours, label: 'Hours Banner Line', widget: string }
+          - name: openingHours
+            label: 'Opening Hours'
+            label_singular: 'Row'
+            widget: list
+            fields:
+              - { name: days, label: 'Days', widget: string, hint: 'e.g. Monday – Thursday' }
+              - { name: times, label: 'Times', widget: string, hint: 'e.g. 16:00 – 23:00' }
+          - name: managers
+            label: 'Managers'
+            label_singular: 'Manager'
+            widget: list
+            fields:
+              - { name: name, label: 'Name', widget: string }
+              - { name: role, label: 'Role', widget: string }
+              - { name: phone, label: 'Phone', widget: string, hint: 'e.g. 087 123 4567' }
+          - name: photos
+            label: 'Photos'
+            label_singular: 'Photo'
+            widget: list
+            fields:
+              - { name: image, label: 'Photo', widget: image }
+              - { name: caption, label: 'Caption', widget: string }
+          - { name: menuNote, label: 'Menu Note', widget: string }
+          - name: menu
+            label: 'Menu Sections'
+            label_singular: 'Menu Section'
+            widget: list
+            fields:
+              - { name: section, label: 'Section Name', widget: string, hint: 'e.g. Starters' }
+              - name: items
+                label: 'Dishes'
+                label_singular: 'Dish'
+                widget: list
+                fields:
+                  - { name: name, label: 'Dish', widget: string }
+                  - { name: description, label: 'Description', widget: string, required: false }
+                  - { name: price, label: 'Price', widget: string }
+
+  - name: communitypage
+    label: '🤝 Community'
+    description: 'Activities on the Community page — bowls, pilates, darts, the walkway, and anything else happening at the club.'
+    files:
+      - name: community
+        label: 'Community Page'
+        file: 'content/community.json'
+        fields:
+          - { name: intro, label: 'Page Introduction', widget: text }
+          - name: activities
+            label: 'Activities'
+            label_singular: 'Activity'
+            widget: list
+            fields:
+              - { name: title, label: 'Title', widget: string }
+              - { name: when, label: 'When', widget: string, required: false, hint: 'e.g. Wednesdays, 8pm' }
+              - { name: description, label: 'Description', widget: text }
+              - { name: image, label: 'Photo', widget: image, required: false }
+
+  - name: bookings
+    label: '🏟 Facilities & Bookings'
+    description: 'The facilities listed on the Bookings page, their rates, and where booking requests are emailed.'
+    files:
+      - name: facilities
+        label: 'Bookings Page'
+        file: 'content/facilities.json'
+        fields:
+          - { name: intro, label: 'Page Introduction', widget: text }
+          - { name: bookingEmail, label: 'Booking Requests Email', widget: string }
+          - name: facilities
+            label: 'Facilities'
+            label_singular: 'Facility'
+            widget: list
+            fields:
+              - { name: name, label: 'Name', widget: string }
+              - { name: description, label: 'Description', widget: text }
+              - { name: rate, label: 'Rate', widget: string, required: false, hint: 'e.g. €40 / hour (external)' }
+              - { name: note, label: 'Small Print', widget: string, required: false }
+
+  - name: sponsorspage
+    label: '🤝 Sponsors'
+    description: 'The Sponsors page, grouped by tier. The Main Club Sponsor gets the biggest card.'
+    files:
+      - name: sponsors
+        label: 'Sponsors'
+        file: 'content/sponsors.json'
+        fields:
+          - { name: intro, label: 'Page Introduction', widget: text }
+          - { name: becomeText, label: '"Become a Sponsor" Text', widget: text }
+          - name: sponsors
+            label: 'Sponsors'
+            label_singular: 'Sponsor'
+            widget: list
+            fields:
+              - { name: name, label: 'Name', widget: string }
+              - name: tier
+                label: 'Tier'
+                widget: select
+                options: ['Main Club Sponsor', 'Sleeve Sponsor', 'Pitch Sponsor', 'Kit Partner', 'Club Partner']
+              - { name: description, label: 'Description', widget: string, required: false }
+              - { name: url, label: 'Website', widget: string, required: false }
+              - { name: logo, label: 'Logo', widget: image, required: false }
+
+  - name: committee
+    label: '👥 Committee'
+    description: 'The committee list on the Our Club page. Leave the email blank to show "email to be confirmed".'
+    files:
+      - name: committee
+        label: 'Committee Members'
+        file: 'content/committee.json'
+        fields:
+          - name: members
+            label: 'Members'
+            label_singular: 'Member'
+            widget: list
+            fields:
+              - { name: role, label: 'Role', widget: string }
+              - { name: name, label: 'Name', widget: string }
+              - { name: email, label: 'Email', widget: string, required: false }
+
+  - name: clubdocs
+    label: '📄 Club Documents'
+    description: 'Policies, forms and plans on the Our Club page. Upload PDFs directly — leave the file empty to show "coming soon".'
+    files:
+      - name: documents
+        label: 'Documents'
+        file: 'content/documents.json'
+        fields:
+          - name: documents
+            label: 'Documents'
+            label_singular: 'Document'
+            widget: list
+            fields:
+              - { name: title, label: 'Title', widget: string }
+              - name: category
+                label: 'Category'
+                widget: select
+                options: ['Club Strategy', 'Policies', 'Forms', 'Other']
+              - { name: file, label: 'File (PDF)', widget: file, required: false }
+              - { name: note, label: 'Short Description', widget: string, required: false }
+
+  - name: strategypage
+    label: '🎯 Strategy 2026–2031'
+    description: 'The expandable strategy pillars on the Our Club page.'
+    files:
+      - name: strategy
+        label: 'Strategy'
+        file: 'content/strategy.json'
+        fields:
+          - { name: vision, label: 'Vision Statement', widget: text }
+          - { name: values, label: 'Values Line', widget: string }
+          - name: pillars
+            label: 'Pillars'
+            label_singular: 'Pillar'
+            widget: list
+            fields:
+              - { name: title, label: 'Pillar Name', widget: string }
+              - { name: tagline, label: 'Tagline', widget: string }
+              - name: objectives
+                label: 'Objectives'
+                label_singular: 'Objective'
+                widget: list
+                fields:
+                  - { name: title, label: 'Objective', widget: string }
+                  - { name: text, label: 'Detail', widget: text }
+
+  - name: clubdetails
+    label: '⚙️ Club Details'
+    description: 'Contact details and social links used across the site (header, footer, contact sections).'
+    files:
+      - name: club
+        label: 'Club Details'
+        file: 'content/club.json'
+        fields:
+          - { name: name, label: 'Club Name', widget: string }
+          - { name: irishName, label: 'Irish Name', widget: string }
+          - { name: founded, label: 'Founded', widget: number, value_type: int }
+          - { name: grounds, label: 'Grounds', widget: string }
+          - { name: email, label: 'Contact Email', widget: string }
+          - { name: phone, label: 'Contact Phone', widget: string }
+          - { name: twitter, label: 'X / Twitter URL', widget: string }
+          - { name: facebook, label: 'Facebook URL', widget: string }
+          - { name: instagram, label: 'Instagram URL', widget: string }

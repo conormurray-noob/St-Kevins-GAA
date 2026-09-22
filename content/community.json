@@ -1,0 +1,41 @@
+{
+  "intro": "St. Kevin's is more than football. Our clubhouse and grounds are home to activities for every age and interest — and everyone in the community is welcome, member or not.",
+  "activities": [
+    {
+      "title": "Saints Bar and Restaurant",
+      "when": "Now open — see socials for hours",
+      "description": "Our clubhouse restaurant and bar is now open. Drop in after training, watch the match, or book a table for a family occasion. Available for parties and private events.",
+      "image": "/placeholders/ph-1.svg"
+    },
+    {
+      "title": "Bowls",
+      "when": "Weekly in the clubhouse hall (times TBC)",
+      "description": "Indoor bowls in the hall — a great social evening and open to all levels. New players are always welcome; equipment provided.",
+      "image": "/placeholders/ph-2.svg"
+    },
+    {
+      "title": "Pilates",
+      "when": "Evening classes (times TBC)",
+      "description": "Evening Pilates classes in the clubhouse. Suitable for beginners and improvers — bring a mat and book your spot.",
+      "image": "/placeholders/ph-3.svg"
+    },
+    {
+      "title": "Darts",
+      "when": "Boards in Saints Bar — league nights TBC",
+      "description": "St. Kevin's has its own darts team, and the boards in Saints Bar and Restaurant are open to everyone. Fancy a game, or want to join the team for league nights? Ask at the bar.",
+      "image": "/placeholders/ph-3.svg"
+    },
+    {
+      "title": "Club Walkway",
+      "when": "Open daily, 7am – 10pm",
+      "description": "Our 1.2km floodlit walkway around the grounds is free and open to the whole community every day. Buggy and wheelchair friendly.",
+      "image": "/placeholders/ph-4.svg"
+    },
+    {
+      "title": "Gaelic4Mothers&Others",
+      "when": "Saturdays, 10:00 – 11:00",
+      "description": "Non-competitive football, fitness and fun for mothers and others — no experience needed, all fitness levels welcome.",
+      "image": "/placeholders/ph-5.svg"
+    }
+  ]
+}

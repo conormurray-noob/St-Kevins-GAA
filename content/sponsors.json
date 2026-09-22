@@ -1,0 +1,62 @@
+{
+  "intro": "St. Kevin's GFC is powered by the generosity of local businesses. Every euro of sponsorship goes directly into teams, facilities and our juvenile section.",
+  "becomeText": "From pitch-side signage to jersey sponsorship and match-day partnerships, there's a package to suit every business. Talk to us about getting your name in front of the North Kildare community every week of the year.",
+  "sponsors": [
+    {
+      "name": "FJS Plant Ltd",
+      "tier": "Main Club Sponsor",
+      "description": "Our proud main club sponsor — on the front of every St. Kevin's jersey.",
+      "url": "",
+      "logo": ""
+    },
+    {
+      "name": "Typo",
+      "tier": "Sleeve Sponsor",
+      "description": "Senior jersey sleeve sponsor.",
+      "url": "",
+      "logo": ""
+    },
+    {
+      "name": "Greenoak",
+      "tier": "Sleeve Sponsor",
+      "description": "Senior jersey sleeve sponsor.",
+      "url": "",
+      "logo": ""
+    },
+    {
+      "name": "O'Neills",
+      "tier": "Kit Partner",
+      "description": "Official kit and merchandise partner.",
+      "url": "",
+      "logo": ""
+    },
+    {
+      "name": "Coill Dubh Credit Union",
+      "tier": "Club Partner",
+      "description": "Supporting the club and community for years.",
+      "url": "",
+      "logo": ""
+    },
+    {
+      "name": "Popup Races",
+      "tier": "Club Partner",
+      "description": "",
+      "url": "",
+      "logo": ""
+    },
+    {
+      "name": "Healy Mangan",
+      "tier": "Club Partner",
+      "description": "",
+      "url": "",
+      "logo": ""
+    },
+    {
+      "name": "Your Business Here",
+      "tier": "Pitch Sponsor",
+      "description": "Pitch-side signage packages available — get in touch.",
+      "url": "",
+      "logo": ""
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "intro": "Our facilities in Staplestown are available to club teams, community groups and external clubs. Online booking and payment are coming soon — for now, send a booking request and we'll confirm availability.",
+  "bookingEmail": "secretary.stkevins.kildare@gaa.ie",
+  "facilities": [
+    {
+      "name": "AstroTurf Pitch",
+      "description": "Floodlit all-weather pitch, ideal for training and small-sided games year round.",
+      "rate": "€40 / hour (external)",
+      "note": "Club teams book through their team coach."
+    },
+    {
+      "name": "Main Pitch",
+      "description": "Full-size grass pitch with spectator area — our championship home ground.",
+      "rate": "On request",
+      "note": "Subject to fixtures and pitch condition."
+    },
+    {
+      "name": "Back Pitch",
+      "description": "Full-size grass pitch, perfect for challenge games and league fixtures.",
+      "rate": "On request",
+      "note": ""
+    },
+    {
+      "name": "Training Pitch",
+      "description": "Smaller grass pitch for drills, juvenile sessions and warm-ups.",
+      "rate": "On request",
+      "note": ""
+    },
+    {
+      "name": "The Hall",
+      "description": "Indoor hall for bowls, fitness classes, meetings, and indoor training on wet nights.",
+      "rate": "On request",
+      "note": "Regular weekly slots available."
+    },
+    {
+      "name": "Events & Entertainment",
+      "description": "Saints Bar and Restaurant and function spaces are available for parties, fundraisers and community events.",
+      "rate": "On request",
+      "note": "Talk to us about catering and entertainment options."
+    }
+  ]
+}

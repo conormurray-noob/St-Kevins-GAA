@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="../crest-clubzap.png" />
+    <title>St. Kevin's GAA — Site Admin</title>
+    <style>
+      /* Club-coloured skin for the Decap admin UI */
+      [class*='AppHeader'] {
+        background-color: #111114 !important;
+      }
+      [class*='AppHeader'] a[class*='active'],
+      [class*='AppHeader'] a:hover {
+        color: #f17784 !important;
+      }
+      button[class*='publish'],
+      [class*='PublishButton'] {
+        background-color: #c8102e !important;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/decap-cms@3/dist/decap-cms.js"></script>
+    <script>
+      // Live preview for News Articles that mirrors the real site's article view
+      CMS.registerPreviewStyle('/admin/preview.css')
+
+      var h = window.h
+      var NewsPreview = window.createClass({
+        render: function () {
+          var entry = this.props.entry
+          var image = this.props.getAsset(entry.getIn(['data', 'image']))
+          var date = entry.getIn(['data', 'date'])
+          var dateStr = ''
+          try {
+            dateStr = new Date(date).toLocaleDateString('en-IE', {
+              day: 'numeric',
+              month: 'long',
+              year: 'numeric',
+            })
+          } catch (e) {}
+          var body = (entry.getIn(['data', 'body']) || '').split(/\n\s*\n/)
+          return h(
+            'div',
+            { className: 'article-preview' },
+            image ? h('img', { className: 'hero', src: image.toString() }) : null,
+            h(
+              'div',
+              { className: 'inner' },
+              h('span', { className: 'badge' }, entry.getIn(['data', 'category']) || 'News'),
+              h('span', { className: 'date' }, dateStr),
+              h('h1', {}, entry.getIn(['data', 'title']) || 'Headline goes here'),
+              h.apply(
+                null,
+                ['div', { className: 'body' }].concat(
+                  body.map(function (p) {
+                    return h('p', {}, p)
+                  }),
+                ),
+              ),
+            ),
+          )
+        },
+      })
+      CMS.registerPreviewTemplate('news', NewsPreview)
+    </script>
+  </body>
+</html>
