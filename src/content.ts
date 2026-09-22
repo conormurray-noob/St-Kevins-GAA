@@ -78,9 +78,9 @@ export const galleryImages: GalleryImage[] = galleryJson.images
 
 export const socialPosts: SocialPost[] = socialJson.posts as SocialPost[]
 
-// Names shown on the home-page sponsor strip (pitch-signage placeholders excluded)
+// Names shown on the home-page sponsor strip ("your business here" placeholders excluded)
 export const sponsors: string[] = sponsorsJson.sponsors
-  .filter((s) => s.tier !== 'Pitch Sponsor')
+  .filter((s) => !s.name.toLowerCase().includes('your business'))
   .map((s) => s.name)
 
 export const sponsorsPage: { intro: string; becomeText: string; sponsors: SponsorEntry[] } =

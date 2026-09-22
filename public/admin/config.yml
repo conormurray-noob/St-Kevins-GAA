@@ -305,7 +305,7 @@ collections:
               - name: tier
                 label: 'Tier'
                 widget: select
-                options: ['Main Club Sponsor', 'Sleeve Sponsor', 'Pitch Sponsor', 'Kit Partner', 'Club Partner']
+                options: ['Main Club Sponsor', 'Sleeve Sponsor', 'Kit Partner', 'Sponsor']
               - { name: description, label: 'Description', widget: string, required: false }
               - { name: url, label: 'Website', widget: string, required: false }
               - { name: logo, label: 'Logo', widget: image, required: false }

@@ -1,7 +1,7 @@
 import { club, sponsorsPage } from '../content'
 import { PageHeader, SectionHeading } from '../components/ui'
 
-const TIER_ORDER = ['Main Club Sponsor', 'Sleeve Sponsor', 'Pitch Sponsor', 'Kit Partner', 'Club Partner']
+const TIER_ORDER = ['Main Club Sponsor', 'Sleeve Sponsor', 'Kit Partner', 'Sponsor']
 
 export default function Sponsors() {
   const tiers = TIER_ORDER.filter((t) => sponsorsPage.sponsors.some((s) => s.tier === t))
