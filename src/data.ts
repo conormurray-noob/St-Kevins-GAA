@@ -90,6 +90,14 @@ export interface SponsorEntry {
   logo?: string
 }
 
+export interface ClubPolicy {
+  title: string
+  summary: string
+  points: string[]
+  file?: string
+  updated?: string
+}
+
 export interface StrategyPillar {
   title: string
   tagline: string

@@ -327,6 +327,29 @@ collections:
               - { name: name, label: 'Name', widget: string }
               - { name: email, label: 'Email', widget: string, required: false }
 
+  - name: policies
+    label: '🛡 Club Policies'
+    description: 'The policy summaries on the Our Club page. Upload each full policy PDF and list its key points in plain English — like the strategy pillars.'
+    files:
+      - name: policies
+        label: 'Policies'
+        file: 'content/policies.json'
+        fields:
+          - { name: intro, label: 'Section Introduction', widget: text }
+          - name: policies
+            label: 'Policies'
+            label_singular: 'Policy'
+            widget: list
+            fields:
+              - { name: title, label: 'Policy Name', widget: string }
+              - { name: summary, label: 'One-line Summary', widget: string }
+              - name: points
+                label: 'Key Points'
+                widget: list
+                field: { name: point, label: 'Point', widget: text }
+              - { name: file, label: 'Full Policy (PDF)', widget: file, required: false, hint: 'Leave empty to show "coming soon"' }
+              - { name: updated, label: 'Last Updated', widget: string, required: false, hint: 'e.g. September 2026' }
+
   - name: clubdocs
     label: '📄 Club Documents'
     description: 'Policies, forms and plans on the Our Club page. Upload PDFs directly — leave the file empty to show "coming soon".'

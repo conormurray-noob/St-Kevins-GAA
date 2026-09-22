@@ -3,6 +3,7 @@
 import type {
   ClubDetails,
   ClubDocument,
+  ClubPolicy,
   ClubEvent,
   CommitteeMember,
   CommunityActivity,
@@ -29,6 +30,7 @@ import facilitiesJson from '../content/facilities.json'
 import eventsJson from '../content/events.json'
 import documentsJson from '../content/documents.json'
 import strategyJson from '../content/strategy.json'
+import policiesJson from '../content/policies.json'
 import saintsJson from '../content/saints.json'
 import sponsorsJson from '../content/sponsors.json'
 
@@ -103,5 +105,9 @@ export const events: ClubEvent[] = eventsJson.events as ClubEvent[]
 export const documents: ClubDocument[] = documentsJson.documents
 
 export const strategy: { vision: string; values: string; pillars: StrategyPillar[] } = strategyJson
+
+export const policiesIntro: string = policiesJson.intro
+
+export const policies: ClubPolicy[] = policiesJson.policies
 
 export const saints: SaintsInfo = saintsJson

@@ -1,4 +1,4 @@
-import { club, committee, documents, strategy } from '../content'
+import { club, committee, documents, policies, policiesIntro, strategy } from '../content'
 import { PageHeader, SectionHeading } from '../components/ui'
 import GetInvolved from '../components/GetInvolved'
 
@@ -89,6 +89,52 @@ export default function ClubInfo() {
           <p className="mt-4 text-sm text-coal-400">Values: {strategy.values}</p>
         </section>
 
+        {/* Club policies */}
+        <section>
+          <SectionHeading>Club Policies</SectionHeading>
+          <p className="text-coal-600 max-w-3xl mb-6">{policiesIntro}</p>
+          <div className="space-y-3 max-w-4xl">
+            {policies.map((p) => (
+              <details key={p.title} className="group bg-white rounded-xl border border-coal-100 shadow-sm open:ring-1 open:ring-club-200">
+                <summary className="cursor-pointer list-none px-5 py-4 flex items-center gap-4">
+                  <span className="flex-1">
+                    <span className="font-display uppercase block">{p.title}</span>
+                    <span className="text-sm text-coal-500">{p.summary}</span>
+                  </span>
+                  <span className="text-club-700 text-xl group-open:rotate-90 transition-transform shrink-0">›</span>
+                </summary>
+                <div className="border-t border-coal-100 px-5 py-5">
+                  <ul className="space-y-2">
+                    {p.points.map((pt, i) => (
+                      <li key={i} className="flex gap-3 text-sm text-coal-600 leading-relaxed">
+                        <span className="text-club-700 font-bold shrink-0">—</span>
+                        {pt}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 flex items-center gap-4">
+                    {p.file ? (
+                      <a
+                        href={p.file}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="bg-club-700 hover:bg-club-600 text-white font-bold uppercase text-xs px-4 py-2 rounded-lg transition-colors"
+                      >
+                        Download Full Policy (PDF)
+                      </a>
+                    ) : (
+                      <span className="bg-coal-100 text-coal-400 text-[10px] font-bold uppercase px-2.5 py-1.5 rounded">
+                        Full document coming soon
+                      </span>
+                    )}
+                    {p.updated && <span className="text-xs text-coal-400">Last updated {p.updated}</span>}
+                  </div>
+                </div>
+              </details>
+            ))}
+          </div>
+        </section>
+
         {/* Committee */}
         <section>
           <SectionHeading>Club Committee 2026</SectionHeading>
@@ -116,8 +162,9 @@ export default function ClubInfo() {
         <section>
           <SectionHeading>Club Documents</SectionHeading>
           <p className="text-coal-600 max-w-3xl mb-6">
-            Policies, forms and plans for members — from safeguarding statements to injury claim
-            forms. If you can't find what you need, contact the secretary.
+            Forms and plans for members — from injury claim forms to the strategic plan. Club
+            policies have their own section above. If you can't find what you need, contact the
+            secretary.
           </p>
           <div className="space-y-3 max-w-3xl">
             {docCategories.map((cat) => (
