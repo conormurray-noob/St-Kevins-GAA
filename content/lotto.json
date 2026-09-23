@@ -1,9 +1,38 @@
 {
-  "currentJackpot": "€7,800",
-  "nextDraw": "September 22, 2026",
+  "currentJackpot": "€8,000",
+  "nextDraw": "September 29, 2026",
   "entriesClose": "Entries close 6pm on draw night",
   "playUrl": "https://stkevinsgfckildare.clubzap.com/categories/lotto/products",
   "draws": [
+    {
+      "date": "Tuesday 22 September 2026",
+      "numbers": [
+        4,
+        5,
+        10,
+        28
+      ],
+      "jackpot": "€7,800",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "Adrieene O'Connor (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Audrey Salmon (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Hannah Fagan c/o Speedy",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Shane Kenna c/o Ger Kenna",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
     {
       "date": "Tuesday 15 September 2026",
       "numbers": [
@@ -203,35 +232,6 @@
         },
         {
           "name": "Aisling O'Connor c/o Eamonn O'Connor",
-          "prize": "Lucky Dip"
-        }
-      ]
-    },
-    {
-      "date": "Tuesday 28 July 2026",
-      "numbers": [
-        2,
-        11,
-        15,
-        26
-      ],
-      "jackpot": "€6,200",
-      "jackpotWon": false,
-      "winners": [
-        {
-          "name": "James Egan (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Michelle Moran (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "TJ & Sarah Mcloughin c/o Jim O'Donnell",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Noreen Corbett c/o Jim O'Donnell",
           "prize": "Lucky Dip"
         }
       ]
