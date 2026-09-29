@@ -55,9 +55,9 @@
       "team": "U16",
       "home": "St. Kevin's",
       "away": "Milltown",
-      "date": "Sat 10 Oct",
-      "iso": "2026-10-10",
-      "time": "TBC",
+      "date": "Thu 8 Oct",
+      "iso": "2026-10-08",
+      "time": "18:30",
       "venue": "St Kevin's"
     }
   ],
@@ -83,6 +83,17 @@
       "venue": "St Kevin's",
       "homeScore": "8-11",
       "awayScore": "6-10"
+    },
+    {
+      "competition": "Life Credit Union U16 B Football Competition Stage 2 - Shield - Round 4",
+      "team": "U16",
+      "home": "Athy (C)",
+      "away": "St. Kevin's",
+      "date": "Mon 21 Sep",
+      "iso": "2026-09-21",
+      "venue": "Athy",
+      "homeScore": "CONC",
+      "awayScore": "0-0"
     },
     {
       "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Semi Finals - Semi Finals",
@@ -138,17 +149,6 @@
       "venue": "St Kevin's",
       "homeScore": "4-4",
       "awayScore": "3-10"
-    },
-    {
-      "competition": "U14 Championship - Division 7 - Round 4",
-      "team": "U14",
-      "home": "St. Kevin's",
-      "away": "Athgarvan",
-      "date": "Sat 12 Sep",
-      "iso": "2026-09-12",
-      "venue": "St Kevin's",
-      "homeScore": "5-17",
-      "awayScore": "1-3"
     }
   ]
 }
