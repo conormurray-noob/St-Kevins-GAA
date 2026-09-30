@@ -1,9 +1,38 @@
 {
-  "currentJackpot": "€8,000",
-  "nextDraw": "September 29, 2026",
+  "currentJackpot": "€8,200",
+  "nextDraw": "October 06, 2026",
   "entriesClose": "Entries close 6pm on draw night",
   "playUrl": "https://stkevinsgfckildare.clubzap.com/categories/lotto/products",
   "draws": [
+    {
+      "date": "Tuesday 29 September 2026",
+      "numbers": [
+        13,
+        20,
+        26,
+        28
+      ],
+      "jackpot": "€8,000",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "David Casey c/o Alice",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Richard (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Arron Smyth c/o Claire Kelly",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Miriam Bagnall Gordon (Online)",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
     {
       "date": "Tuesday 22 September 2026",
       "numbers": [
@@ -203,35 +232,6 @@
         },
         {
           "name": "Joe Fulton c/o Ward's shop",
-          "prize": "Lucky Dip"
-        }
-      ]
-    },
-    {
-      "date": "Tuesday 4 August 2026",
-      "numbers": [
-        6,
-        11,
-        16,
-        17
-      ],
-      "jackpot": "€6,400",
-      "jackpotWon": false,
-      "winners": [
-        {
-          "name": "Gary Casey (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Sophie & Lucy (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Adrian MG c/o Handbag",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Aisling O'Connor c/o Eamonn O'Connor",
           "prize": "Lucky Dip"
         }
       ]
