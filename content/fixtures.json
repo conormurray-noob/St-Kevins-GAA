@@ -61,6 +61,16 @@
       "venue": "St Kevin's"
     },
     {
+      "competition": "Life Credit Union U16 B Football Competition Stage 2 - Cup - Shield Semi Final",
+      "team": "U16",
+      "home": "Moorefield",
+      "away": "St. Kevin's",
+      "date": "Sat 10 Oct",
+      "iso": "2026-10-10",
+      "time": "12:00",
+      "venue": "St Kevin's"
+    },
+    {
       "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 2",
       "team": "Minor",
       "home": "St. Kevin's",
@@ -136,17 +146,6 @@
       "awayScore": "6-10"
     },
     {
-      "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Semi Finals - Semi Finals",
-      "team": "Reserves",
-      "home": "St. Kevin's",
-      "away": "Suncroft GFC",
-      "date": "Mon 21 Sep",
-      "iso": "2026-09-21",
-      "venue": "St Kevin's",
-      "homeScore": "3-15",
-      "awayScore": "1-16"
-    },
-    {
       "competition": "Life Credit Union U16 B Football Competition Stage 2 - Shield - Round 4",
       "team": "U16",
       "home": "Athy (C)",
@@ -156,6 +155,17 @@
       "venue": "Athy",
       "homeScore": "CONC",
       "awayScore": "0-0"
+    },
+    {
+      "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Semi Finals - Semi Finals",
+      "team": "Reserves",
+      "home": "St. Kevin's",
+      "away": "Suncroft GFC",
+      "date": "Mon 21 Sep",
+      "iso": "2026-09-21",
+      "venue": "St Kevin's",
+      "homeScore": "3-15",
+      "awayScore": "1-16"
     },
     {
       "competition": "Life Credit Union U14 C Football Championship Stage 2 - Cup - Round 3",
