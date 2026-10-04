@@ -1,16 +1,6 @@
 {
   "fixtures": [
     {
-      "competition": "U14 Championship knockout Division 7 - Semi Final",
-      "team": "U14",
-      "home": "St. Kevin's",
-      "away": "Rheban Grange Ogs",
-      "date": "Sat 3 Oct",
-      "iso": "2026-10-03",
-      "time": "10:30",
-      "venue": "St Kevin's"
-    },
-    {
       "competition": "Life Credit Union U14 C Football Championship Stage 2 - Cup - Shield Semi Final",
       "team": "U14",
       "home": "St. Kevin's",
@@ -91,6 +81,16 @@
       "venue": "TBC"
     },
     {
+      "competition": "U14 Championship knockout Division 7 - Final",
+      "team": "U14",
+      "home": "St. Kevin's",
+      "away": "Ellistown",
+      "date": "Sat 24 Oct",
+      "iso": "2026-10-24",
+      "time": "TBC",
+      "venue": "TBC"
+    },
+    {
       "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 4",
       "team": "Minor",
       "home": "Milltown",
@@ -112,6 +112,17 @@
     }
   ],
   "results": [
+    {
+      "competition": "U14 Championship knockout Division 7 - Semi Final",
+      "team": "U14",
+      "home": "St. Kevin's",
+      "away": "Rheban Grange Ogs",
+      "date": "Sat 3 Oct",
+      "iso": "2026-10-03",
+      "venue": "St Kevin's",
+      "homeScore": "7-5",
+      "awayScore": "4-4"
+    },
     {
       "competition": "Life Credit Union U16 B Football Competition Stage 2 - Shield - Round 5",
       "team": "U16",
@@ -188,17 +199,6 @@
       "venue": "Murphy Memorial Park",
       "homeScore": "3-4",
       "awayScore": "6-8"
-    },
-    {
-      "competition": "2026 Manguard Plus Minor Football D Championship Semi Finals - Semi Finals",
-      "team": "Minor",
-      "home": "St. Kevin's",
-      "away": "St. Edwards",
-      "date": "Wed 16 Sep",
-      "iso": "2026-09-16",
-      "venue": "St Kevin's",
-      "homeScore": "2-12",
-      "awayScore": "1-5"
     }
   ]
 }
