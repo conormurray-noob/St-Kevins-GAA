@@ -1,26 +1,6 @@
 {
   "fixtures": [
     {
-      "competition": "Life Credit Union U14 C Football Championship Stage 2 - Cup - Shield Semi Final",
-      "team": "U14",
-      "home": "St. Kevin's",
-      "away": "Balyna Juvenile Club",
-      "date": "Sun 4 Oct",
-      "iso": "2026-10-04",
-      "time": "12:00",
-      "venue": "St Kevin's"
-    },
-    {
-      "competition": "2026 Tom Cross Junior Football Championship Semi Finals - Semi Finals",
-      "team": "Junior",
-      "home": "Ballymore Eustace",
-      "away": "St. Kevin's",
-      "date": "Sun 4 Oct",
-      "iso": "2026-10-04",
-      "time": "17:00",
-      "venue": "Manguard Park Pitch 1"
-    },
-    {
       "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 1",
       "team": "Minor",
       "home": "Teach an Dá Mhíle",
@@ -71,6 +51,16 @@
       "venue": "TBC"
     },
     {
+      "competition": "2026 Tom Cross Junior Football Championship Final - Final",
+      "team": "Junior",
+      "home": "Cappagh",
+      "away": "St. Kevin's",
+      "date": "Sat 17 Oct",
+      "iso": "2026-10-17",
+      "time": "18:00",
+      "venue": "Cedral St Conleth's Newbridge"
+    },
+    {
       "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 3",
       "team": "Minor",
       "home": "St. Kevin's",
@@ -112,6 +102,28 @@
     }
   ],
   "results": [
+    {
+      "competition": "2026 Tom Cross Junior Football Championship Semi Finals - Semi Finals",
+      "team": "Junior",
+      "home": "Ballymore Eustace",
+      "away": "St. Kevin's",
+      "date": "Sun 4 Oct",
+      "iso": "2026-10-04",
+      "venue": "Manguard Park Pitch 1",
+      "homeScore": "0-16",
+      "awayScore": "2-11"
+    },
+    {
+      "competition": "Life Credit Union U14 C Football Championship Stage 2 - Cup - Shield Semi Final",
+      "team": "U14",
+      "home": "St. Kevin's",
+      "away": "Balyna Juvenile Club",
+      "date": "Sun 4 Oct",
+      "iso": "2026-10-04",
+      "venue": "St Kevin's",
+      "homeScore": "1-11",
+      "awayScore": "4-19"
+    },
     {
       "competition": "U14 Championship knockout Division 7 - Semi Final",
       "team": "U14",
@@ -157,17 +169,6 @@
       "awayScore": "6-10"
     },
     {
-      "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Semi Finals - Semi Finals",
-      "team": "Reserves",
-      "home": "St. Kevin's",
-      "away": "Suncroft GFC",
-      "date": "Mon 21 Sep",
-      "iso": "2026-09-21",
-      "venue": "St Kevin's",
-      "homeScore": "3-15",
-      "awayScore": "1-16"
-    },
-    {
       "competition": "Life Credit Union U16 B Football Competition Stage 2 - Shield - Round 4",
       "team": "U16",
       "home": "Athy (C)",
@@ -179,26 +180,15 @@
       "awayScore": "0-0"
     },
     {
-      "competition": "Life Credit Union U14 C Football Championship Stage 2 - Cup - Round 3",
-      "team": "U14",
+      "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Semi Finals - Semi Finals",
+      "team": "Reserves",
       "home": "St. Kevin's",
-      "away": "St. Edwards",
-      "date": "Sun 20 Sep",
-      "iso": "2026-09-20",
+      "away": "Suncroft GFC",
+      "date": "Mon 21 Sep",
+      "iso": "2026-09-21",
       "venue": "St Kevin's",
-      "homeScore": "2-7",
-      "awayScore": "7-10"
-    },
-    {
-      "competition": "U14 Championship - Division 7 - Round 5",
-      "team": "U14",
-      "home": "Rheban Grange Ogs",
-      "away": "St. Kevin's",
-      "date": "Sat 19 Sep",
-      "iso": "2026-09-19",
-      "venue": "Murphy Memorial Park",
-      "homeScore": "3-4",
-      "awayScore": "6-8"
+      "homeScore": "3-15",
+      "awayScore": "1-16"
     }
   ]
 }
