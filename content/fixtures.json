@@ -1,16 +1,6 @@
 {
   "fixtures": [
     {
-      "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 1",
-      "team": "Minor",
-      "home": "Teach an Dá Mhíle",
-      "away": "St. Kevin's",
-      "date": "Tue 6 Oct",
-      "iso": "2026-10-06",
-      "time": "19:00",
-      "venue": "Two Mile House GAA Grounds"
-    },
-    {
       "competition": "U16 Championship knocout Division 6 - Semi Final",
       "team": "U16",
       "home": "St. Kevin's",
@@ -103,6 +93,17 @@
   ],
   "results": [
     {
+      "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 1",
+      "team": "Minor",
+      "home": "Teach an Dá Mhíle",
+      "away": "St. Kevin's",
+      "date": "Tue 6 Oct",
+      "iso": "2026-10-06",
+      "venue": "Two Mile House GAA Grounds",
+      "homeScore": "6-11",
+      "awayScore": "5-12"
+    },
+    {
       "competition": "2026 Tom Cross Junior Football Championship Semi Finals - Semi Finals",
       "team": "Junior",
       "home": "Ballymore Eustace",
@@ -167,17 +168,6 @@
       "venue": "St Kevin's",
       "homeScore": "8-11",
       "awayScore": "6-10"
-    },
-    {
-      "competition": "Life Credit Union U16 B Football Competition Stage 2 - Shield - Round 4",
-      "team": "U16",
-      "home": "Athy (C)",
-      "away": "St. Kevin's",
-      "date": "Mon 21 Sep",
-      "iso": "2026-09-21",
-      "venue": "Athy",
-      "homeScore": "CONC",
-      "awayScore": "0-0"
     },
     {
       "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Semi Finals - Semi Finals",
