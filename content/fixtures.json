@@ -38,7 +38,7 @@
       "date": "Tue 13 Oct",
       "iso": "2026-10-13",
       "time": "19:00",
-      "venue": "TBC"
+      "venue": "St Kevin's"
     },
     {
       "competition": "2026 Tom Cross Junior Football Championship Final - Final",
@@ -170,15 +170,15 @@
       "awayScore": "6-10"
     },
     {
-      "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Semi Finals - Semi Finals",
-      "team": "Reserves",
-      "home": "St. Kevin's",
-      "away": "Suncroft GFC",
+      "competition": "Life Credit Union U16 B Football Competition Stage 2 - Shield - Round 4",
+      "team": "U16",
+      "home": "Athy (C)",
+      "away": "St. Kevin's",
       "date": "Mon 21 Sep",
       "iso": "2026-09-21",
-      "venue": "St Kevin's",
-      "homeScore": "3-15",
-      "awayScore": "1-16"
+      "venue": "Athy",
+      "homeScore": "CONC",
+      "awayScore": "0-0"
     }
   ]
 }
