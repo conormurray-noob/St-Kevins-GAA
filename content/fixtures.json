@@ -1,16 +1,6 @@
 {
   "fixtures": [
     {
-      "competition": "U16 Championship knocout Division 6 - Semi Final",
-      "team": "U16",
-      "home": "St. Kevin's",
-      "away": "Milltown",
-      "date": "Thu 8 Oct",
-      "iso": "2026-10-08",
-      "time": "18:30",
-      "venue": "St Kevin's"
-    },
-    {
       "competition": "Life Credit Union U16 B Football Competition Stage 2 - Cup - Shield Semi Final",
       "team": "U16",
       "home": "Moorefield",
@@ -93,6 +83,17 @@
   ],
   "results": [
     {
+      "competition": "U16 Championship knocout Division 6 - Semi Final",
+      "team": "U16",
+      "home": "St. Kevin's",
+      "away": "Milltown",
+      "date": "Thu 8 Oct",
+      "iso": "2026-10-08",
+      "venue": "St Kevin's",
+      "homeScore": "5-20",
+      "awayScore": "0-4"
+    },
+    {
       "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 1",
       "team": "Minor",
       "home": "Teach an Dá Mhíle",
@@ -168,17 +169,6 @@
       "venue": "St Kevin's",
       "homeScore": "8-11",
       "awayScore": "6-10"
-    },
-    {
-      "competition": "Life Credit Union U16 B Football Competition Stage 2 - Shield - Round 4",
-      "team": "U16",
-      "home": "Athy (C)",
-      "away": "St. Kevin's",
-      "date": "Mon 21 Sep",
-      "iso": "2026-09-21",
-      "venue": "Athy",
-      "homeScore": "CONC",
-      "awayScore": "0-0"
     }
   ]
 }
