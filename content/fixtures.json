@@ -1,16 +1,6 @@
 {
   "fixtures": [
     {
-      "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Final - Final",
-      "team": "Reserves",
-      "home": "Monasterevan",
-      "away": "St. Kevin's",
-      "date": "Sun 11 Oct",
-      "iso": "2026-10-11",
-      "time": "17:00",
-      "venue": "Ballyteague"
-    },
-    {
       "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 2",
       "team": "Minor",
       "home": "St. Kevin's",
@@ -47,8 +37,8 @@
       "away": "Cappagh",
       "date": "Tue 20 Oct",
       "iso": "2026-10-20",
-      "time": "19:00",
-      "venue": "TBC"
+      "time": "19:15",
+      "venue": "St Kevin's"
     },
     {
       "competition": "U14 Championship knockout Division 7 - Final",
@@ -78,10 +68,21 @@
       "date": "Sat 7 Nov",
       "iso": "2026-11-07",
       "time": "11:00",
-      "venue": "TBC"
+      "venue": "Carbury"
     }
   ],
   "results": [
+    {
+      "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Final - Final",
+      "team": "Reserves",
+      "home": "Monasterevan",
+      "away": "St. Kevin's",
+      "date": "Sun 11 Oct",
+      "iso": "2026-10-11",
+      "venue": "Ballyteague",
+      "homeScore": "1-9",
+      "awayScore": "1-6"
+    },
     {
       "competition": "Life Credit Union U16 B Football Competition Stage 2 - Cup - Shield Semi Final",
       "team": "U16",
@@ -158,17 +159,6 @@
       "venue": "St Kevin's",
       "homeScore": "2-9",
       "awayScore": "4-13"
-    },
-    {
-      "competition": "2026 Manguard Plus Minor Football D Championship Final - Final",
-      "team": "Minor",
-      "home": "Aylmer Gaels",
-      "away": "St. Kevin's",
-      "date": "Sat 26 Sep",
-      "iso": "2026-09-26",
-      "venue": "Cedral St Conleth's Newbridge",
-      "homeScore": "3-12",
-      "awayScore": "5-14"
     }
   ]
 }
