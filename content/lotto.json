@@ -1,9 +1,38 @@
 {
-  "currentJackpot": "€8,400",
-  "nextDraw": "October 13, 2026",
+  "currentJackpot": "€8,600",
+  "nextDraw": "October 20, 2026",
   "entriesClose": "Entries close 6pm on draw night",
   "playUrl": "https://stkevinsgfckildare.clubzap.com/categories/lotto/products",
   "draws": [
+    {
+      "date": "Tuesday 13 October 2026",
+      "numbers": [
+        4,
+        18,
+        19,
+        22
+      ],
+      "jackpot": "€8,400",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "Eammon O'Connor (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Alice Casey c/o Alice Casey",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Isabella and Rhett Gannon c/o Errol Gannon",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Bridget Ryan (Online)",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
     {
       "date": "Tuesday 6 October 2026",
       "numbers": [
@@ -203,35 +232,6 @@
         },
         {
           "name": "Noel O'Regan c/o Noel O'Regan",
-          "prize": "Lucky Dip"
-        }
-      ]
-    },
-    {
-      "date": "Tuesday 18 August 2026",
-      "numbers": [
-        5,
-        8,
-        13,
-        21
-      ],
-      "jackpot": "€6,800",
-      "jackpotWon": false,
-      "winners": [
-        {
-          "name": "Fintan Cronin (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Bernie Regan (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Isabella and Rhett Gannon c/o Errol Gannon",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Mary Young c/o Sam Young",
           "prize": "Lucky Dip"
         }
       ]

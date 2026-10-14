@@ -1,16 +1,6 @@
 {
   "fixtures": [
     {
-      "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 2",
-      "team": "Minor",
-      "home": "St. Kevin's",
-      "away": "Athy",
-      "date": "Tue 13 Oct",
-      "iso": "2026-10-13",
-      "time": "19:00",
-      "venue": "St Kevin's"
-    },
-    {
       "competition": "U16 Championship knocout Division 6 - Final",
       "team": "U16",
       "home": "St. Kevin's",
@@ -72,6 +62,17 @@
     }
   ],
   "results": [
+    {
+      "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 2",
+      "team": "Minor",
+      "home": "St. Kevin's",
+      "away": "Athy",
+      "date": "Tue 13 Oct",
+      "iso": "2026-10-13",
+      "venue": "St Kevin's",
+      "homeScore": "8-7",
+      "awayScore": "1-16"
+    },
     {
       "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Final - Final",
       "team": "Reserves",
@@ -148,17 +149,6 @@
       "venue": "St Kevin's",
       "homeScore": "7-5",
       "awayScore": "4-4"
-    },
-    {
-      "competition": "Life Credit Union U16 B Football Competition Stage 2 - Shield - Round 5",
-      "team": "U16",
-      "home": "St. Kevin's",
-      "away": "Rathangan",
-      "date": "Tue 29 Sep",
-      "iso": "2026-09-29",
-      "venue": "St Kevin's",
-      "homeScore": "2-9",
-      "awayScore": "4-13"
     }
   ]
 }
