@@ -42,9 +42,14 @@ export function FixtureCard({ fixture, result = false }: { fixture: Fixture; res
   ]
   return (
     <div className="bg-white rounded-xl border border-coal-100 shadow-sm overflow-hidden">
-      <div className="flex items-center justify-between bg-coal-50 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-coal-500">
+      <div className="flex items-center justify-between gap-3 bg-coal-50 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-coal-500">
         <span>{fixture.competition}</span>
-        <span>{fixture.team}</span>
+        <span className="flex items-center gap-1.5 shrink-0">
+          {fixture.code === 'Ladies' && (
+            <span className="bg-pink-600 text-white px-1.5 py-0.5 rounded text-[10px] font-bold">Ladies</span>
+          )}
+          {fixture.team}
+        </span>
       </div>
       <div className="px-4 py-4 space-y-2">
         {teams.map(([name, score]) => (

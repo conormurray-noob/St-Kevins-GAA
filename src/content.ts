@@ -70,9 +70,16 @@ export const club: ClubDetails = clubJson
 
 export const lotto: LottoInfo = lottoJson
 
-export const fixtures: Fixture[] = fixturesJson.fixtures.map((f, i) => ({ ...f, id: i }))
+// `code` arrives as a plain string from JSON; anything but 'Ladies' is men's
+const withCode = <T extends { code?: string }>(f: T, i: number) => ({
+  ...f,
+  id: i,
+  code: (f.code === 'Ladies' ? 'Ladies' : 'Men') as Fixture['code'],
+})
 
-export const results: Fixture[] = fixturesJson.results.map((f, i) => ({ ...f, id: i }))
+export const fixtures: Fixture[] = fixturesJson.fixtures.map(withCode)
+
+export const results: Fixture[] = fixturesJson.results.map(withCode)
 
 export const schedule: TrainingSession[] = scheduleJson.sessions
 

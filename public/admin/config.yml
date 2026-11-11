@@ -138,6 +138,7 @@ collections:
             widget: list
             fields:
               - { name: competition, label: 'Competition', widget: string }
+              - { name: code, label: "Men's or Ladies", widget: select, options: ['Men', 'Ladies'], default: 'Men' }
               - { name: team, label: 'Our Team', widget: string, hint: 'e.g. Senior Men, U16 Boys' }
               - { name: home, label: 'Home Team', widget: string }
               - { name: away, label: 'Away Team', widget: string }
@@ -151,6 +152,7 @@ collections:
             widget: list
             fields:
               - { name: competition, label: 'Competition', widget: string }
+              - { name: code, label: "Men's or Ladies", widget: select, options: ['Men', 'Ladies'], default: 'Men' }
               - { name: team, label: 'Our Team', widget: string }
               - { name: home, label: 'Home Team', widget: string }
               - { name: away, label: 'Away Team', widget: string }

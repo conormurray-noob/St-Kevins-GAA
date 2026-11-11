@@ -2,6 +2,7 @@
   "fixtures": [
     {
       "competition": "Leinster Club Junior Football Championship 2026 - Quarter-Final",
+      "code": "Men",
       "team": "Junior",
       "home": "St. Brigid's",
       "away": "St. Kevin's",
@@ -14,6 +15,7 @@
   "results": [
     {
       "competition": "2026 U23 Football E Competition Semi-Finals - Semi Final",
+      "code": "Men",
       "team": "U23",
       "home": "St. Kevin's",
       "away": "Kill",
@@ -25,7 +27,8 @@
     },
     {
       "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 5",
-      "team": "Minor",
+      "code": "Ladies",
+      "team": "Minor Ladies",
       "home": "Carbury",
       "away": "St. Kevin's",
       "date": "Sat 7 Nov",
@@ -36,7 +39,8 @@
     },
     {
       "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 4",
-      "team": "Minor",
+      "code": "Ladies",
+      "team": "Minor Ladies",
       "home": "Milltown",
       "away": "St. Kevin's",
       "date": "Mon 2 Nov",
@@ -47,7 +51,8 @@
     },
     {
       "competition": "U14 Championship knockout Division 7 - Final",
-      "team": "U14",
+      "code": "Ladies",
+      "team": "U14 Girls",
       "home": "St. Kevin's",
       "away": "Ellistown",
       "date": "Sun 1 Nov",
@@ -58,6 +63,7 @@
     },
     {
       "competition": "Leinster Club Junior Football Championship 2026 - Round 1",
+      "code": "Men",
       "team": "Junior",
       "home": "St. Kevin's",
       "away": "Muckalee",
@@ -69,7 +75,8 @@
     },
     {
       "competition": "Life Credit Union U16 B Football Competition Stage 2 - Cup - Shield Final",
-      "team": "U16",
+      "code": "Men",
+      "team": "U16 Boys",
       "home": "St. Kevin's",
       "away": "Carbury",
       "date": "Mon 26 Oct",
@@ -80,7 +87,8 @@
     },
     {
       "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 3",
-      "team": "Minor",
+      "code": "Ladies",
+      "team": "Minor Ladies",
       "home": "St. Kevin's",
       "away": "Cappagh",
       "date": "Tue 20 Oct",
@@ -91,7 +99,8 @@
     },
     {
       "competition": "U16 Championship knocout Division 6 - Final",
-      "team": "U16",
+      "code": "Ladies",
+      "team": "U16 Girls",
       "home": "St. Kevin's",
       "away": "Rathcoffey",
       "date": "Sat 17 Oct",

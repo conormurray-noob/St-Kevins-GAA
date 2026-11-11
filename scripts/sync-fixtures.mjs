@@ -48,17 +48,25 @@ function isoDate(long) {
   return `${y}-${String(MONTHS[mon]).padStart(2, '0')}-${String(d).padStart(2, '0')}`
 }
 
-// Guess which of our teams is playing from the competition name
-function teamLabel(competition) {
+// Guess which of our teams is playing from the competition name and code.
+// kildaregaa.ie marks ladies games only via a `ladies_football` CSS class
+// (rendered as a pink time badge); competition names don't say so.
+function teamLabel(competition, ladies) {
   const c = competition.toLowerCase()
   const grade = c.match(/\bu-?(\d+)\b/)
-  if (grade) return `U${grade[1]}`
+  if (ladies) {
+    if (grade) return Number(grade[1]) >= 19 ? `U${grade[1]} Ladies` : `U${grade[1]} Girls`
+    if (c.includes('minor')) return 'Minor Ladies'
+    if (c.includes('junior')) return 'Junior Ladies'
+    if (c.includes('intermediate')) return 'Intermediate Ladies'
+    return 'Ladies'
+  }
+  if (grade) return Number(grade[1]) >= 19 ? `U${grade[1]}` : `U${grade[1]} Boys`
   if (c.includes('minor')) return 'Minor'
   if (c.includes('reserve')) return 'Reserves'
-  if (c.includes('ladies') || c.includes('lgfa')) return 'Ladies'
   if (c.includes('junior')) return 'Junior'
   if (c.includes('senior')) return 'Senior Men'
-  return 'Club'
+  return 'Men'
 }
 
 function parseMatches(seg) {
@@ -85,9 +93,11 @@ function parseMatches(seg) {
     const away = grab(/away_team[\s\S]*?<a[^>]*>\s*([^<]+)/) || grab(/away_team[^>]*>\s*([^<]+)/)
     if (!home || !away) continue
     if (!home.includes('Kevin') && !away.includes('Kevin')) continue
+    const ladies = /class="time[^"]*\bladies_football\b/.test(block)
     matches.push({
       competition,
-      team: teamLabel(competition),
+      code: ladies ? 'Ladies' : 'Men',
+      team: teamLabel(competition, ladies),
       home: home.replace(OUR_NAME, "St. Kevin's"),
       away: away.replace(OUR_NAME, "St. Kevin's"),
       date: currentDate,

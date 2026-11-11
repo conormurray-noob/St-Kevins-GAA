@@ -26,6 +26,7 @@ export interface NewsArticle {
 export interface Fixture {
   id: number
   competition: string
+  code?: 'Men' | 'Ladies'
   team: string
   home: string
   away: string

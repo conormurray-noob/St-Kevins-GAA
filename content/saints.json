@@ -9,8 +9,9 @@
     { "days": "Kitchen (Wed – Sun)", "times": "12:30 – 21:00" }
   ],
   "managers": [
-    { "name": "Keith Fitzharris", "role": "Manager", "phone": "Phone TBC" },
-    { "name": "Mark Grace", "role": "Manager", "phone": "Phone TBC" }
+    { "name": "Saints Bar and Restaurant", "role": "Bookings & Enquiries", "phone": "087 004 5213" },
+    { "name": "Keith Fitzharris", "role": "Bar Manager", "phone": "087 130 4583" },
+    { "name": "Mark Grace", "role": "Restaurant Manager", "phone": "085 837 3687" }
   ],
   "photos": [
     { "image": "/placeholders/ph-12.svg", "caption": "The bar" },
