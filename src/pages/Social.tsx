@@ -1,8 +1,66 @@
-import { createElement, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { SocialPost } from '../data'
 
-// Behold feed for @stkevinsgaa (managed at app.behold.so, free plan)
-const BEHOLD_FEED_ID = 'n7sZCPAg9dxjPbSbbAYj'
+// Behold feed for @stkevinsgaa (managed at app.behold.so, free plan).
+// We render its public JSON ourselves — Behold's own widget renders at zero
+// height inside this app.
+const BEHOLD_FEED_URL = 'https://feeds.behold.so/n7sZCPAg9dxjPbSbbAYj'
+
+interface BeholdPost {
+  id: string
+  permalink: string
+  caption?: string
+  likeCount?: number
+  sizes?: { medium?: { mediaUrl: string } }
+  mediaUrl?: string
+}
+
+function InstagramGrid() {
+  const [posts, setPosts] = useState<BeholdPost[] | null>(null)
+  const [failed, setFailed] = useState(false)
+
+  useEffect(() => {
+    fetch(BEHOLD_FEED_URL)
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      .then((d: { posts: BeholdPost[] }) => setPosts(d.posts))
+      .catch(() => setFailed(true))
+  }, [])
+
+  if (failed) {
+    return (
+      <p className="text-sm text-coal-500 text-center py-6">
+        Couldn't load Instagram right now — see the latest on the club's profile.
+      </p>
+    )
+  }
+  if (!posts) {
+    return <div className="grid grid-cols-2 gap-2">{[0, 1, 2, 3].map((i) => <div key={i} className="aspect-square rounded-lg bg-coal-100 animate-pulse" />)}</div>
+  }
+  return (
+    <div className="grid grid-cols-2 gap-2">
+      {posts.slice(0, 6).map((p) => (
+        <a
+          key={p.id}
+          href={p.permalink}
+          target="_blank"
+          rel="noreferrer"
+          className="group relative block aspect-square overflow-hidden rounded-lg bg-coal-100"
+        >
+          <img
+            src={p.sizes?.medium?.mediaUrl ?? p.mediaUrl}
+            alt={p.caption?.split('\n')[0] ?? 'Instagram post'}
+            loading="lazy"
+            className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <span className="absolute inset-0 bg-coal-950/70 opacity-0 group-hover:opacity-100 transition-opacity p-2 text-white text-[11px] leading-snug overflow-hidden">
+            {p.caption?.split('\n')[0]}
+            {p.likeCount != null && <span className="block mt-1 font-bold">♥ {p.likeCount}</span>}
+          </span>
+        </a>
+      ))}
+    </div>
+  )
+}
 import { club, socialPosts } from '../content'
 import { PageHeader, SectionHeading } from '../components/ui'
 
@@ -26,14 +84,6 @@ function LiveFeeds() {
       // re-scan after client-side navigation back to this page
       // @ts-expect-error twttr is injected by the script above
       window.twttr?.widgets?.load()
-    }
-    // Behold's widget script registers the <behold-widget> element once per page
-    if (!document.getElementById('behold-wjs')) {
-      const b = document.createElement('script')
-      b.id = 'behold-wjs'
-      b.type = 'module'
-      b.src = 'https://w.behold.so/widget.js'
-      document.head.appendChild(b)
     }
   }, [])
 
@@ -83,7 +133,7 @@ function LiveFeeds() {
           Instagram — Live
         </div>
         <div className="p-3">
-          {createElement('behold-widget', { 'feed-id': BEHOLD_FEED_ID })}
+          <InstagramGrid />
           <a
             href={club.instagram}
             target="_blank"
