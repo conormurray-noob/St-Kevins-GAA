@@ -217,9 +217,14 @@ export default function ClubInfo() {
                 <div className="font-display uppercase text-lg">{name}</div>
                 <div className="font-display text-4xl text-club-700 my-3">{price}</div>
                 <p className="text-sm text-coal-500">{desc}</p>
-                <button className="mt-5 w-full bg-coal-950 hover:bg-coal-800 text-white font-bold uppercase text-sm py-2.5 rounded-lg transition-colors">
+                <a
+                  href={club.membershipUrl || `mailto:secretary.stkevins.kildare@gaa.ie?subject=${encodeURIComponent(`Membership: ${name}`)}`}
+                  target={club.membershipUrl ? '_blank' : undefined}
+                  rel="noreferrer"
+                  className="mt-5 block w-full bg-coal-950 hover:bg-coal-800 text-white font-bold uppercase text-sm py-2.5 rounded-lg transition-colors"
+                >
                   Join Now
-                </button>
+                </a>
               </div>
             ))}
           </div>

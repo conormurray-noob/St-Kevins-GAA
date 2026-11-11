@@ -1,0 +1,83 @@
+{
+  "intro": "Every team at St. Kevin's and who to contact about it. New players are always welcome — get in touch with a mentor and come along to training.",
+  "teams": [
+    {
+      "name": "Junior Men",
+      "section": "Adult",
+      "code": "Men",
+      "mentors": [{ "name": "Mentor TBC", "role": "Manager", "phone": "", "email": "" }]
+    },
+    {
+      "name": "Reserves",
+      "section": "Adult",
+      "code": "Men",
+      "mentors": [{ "name": "Mentor TBC", "role": "Manager", "phone": "", "email": "" }]
+    },
+    {
+      "name": "Ladies",
+      "section": "Adult",
+      "code": "Ladies",
+      "mentors": [{ "name": "Mentor TBC", "role": "Manager", "phone": "", "email": "" }]
+    },
+    {
+      "name": "U23",
+      "section": "Adult",
+      "code": "Men",
+      "mentors": [{ "name": "Mentor TBC", "role": "Manager", "phone": "", "email": "" }]
+    },
+    {
+      "name": "Minor",
+      "section": "Juvenile",
+      "code": "Men",
+      "mentors": [{ "name": "Mentor TBC", "role": "Manager", "phone": "", "email": "" }]
+    },
+    {
+      "name": "Minor Ladies",
+      "section": "Juvenile",
+      "code": "Ladies",
+      "mentors": [{ "name": "Mentor TBC", "role": "Manager", "phone": "", "email": "" }]
+    },
+    {
+      "name": "U16 Boys",
+      "section": "Juvenile",
+      "code": "Men",
+      "mentors": [{ "name": "Mentor TBC", "role": "Manager", "phone": "", "email": "" }]
+    },
+    {
+      "name": "U16 Girls",
+      "section": "Juvenile",
+      "code": "Ladies",
+      "mentors": [{ "name": "Mentor TBC", "role": "Manager", "phone": "", "email": "" }]
+    },
+    {
+      "name": "U14 Boys",
+      "section": "Juvenile",
+      "code": "Men",
+      "mentors": [{ "name": "Mentor TBC", "role": "Manager", "phone": "", "email": "" }]
+    },
+    {
+      "name": "U14 Girls",
+      "section": "Juvenile",
+      "code": "Ladies",
+      "mentors": [{ "name": "Mentor TBC", "role": "Manager", "phone": "", "email": "" }]
+    },
+    {
+      "name": "U12",
+      "section": "Juvenile",
+      "code": "Mixed",
+      "mentors": [{ "name": "Mentor TBC", "role": "Manager", "phone": "", "email": "" }]
+    },
+    {
+      "name": "Academy (U6–U10)",
+      "section": "Academy",
+      "code": "Mixed",
+      "mentors": [{ "name": "Coordinator TBC", "role": "Academy Coordinator", "phone": "", "email": "" }]
+    },
+    {
+      "name": "Gaelic4Mothers&Others",
+      "section": "Recreational",
+      "code": "Ladies",
+      "mentors": [{ "name": "Coordinator TBC", "role": "Coordinator", "phone": "", "email": "" }]
+    }
+  ]
+}

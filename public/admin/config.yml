@@ -61,6 +61,13 @@ collections:
         label: 'Short Summary'
         widget: text
         hint: 'One or two sentences shown on the news cards.'
+      - name: tags
+        label: 'Teams / Tags'
+        widget: select
+        multiple: true
+        required: false
+        hint: 'Pick every team or topic this article is about — readers can filter news by these.'
+        options: ['Senior', 'Junior', 'Reserves', 'U23', 'Minor', 'Ladies', 'Minor Ladies', 'U16 Boys', 'U16 Girls', 'U14 Boys', 'U14 Girls', 'U12', 'Academy', 'Juvenile', 'Gaelic4Mothers&Others', 'Club', 'Lotto', 'Fundraising', 'Community', 'Saints Bar']
       - name: featured
         label: 'Feature on Home Page'
         widget: boolean
@@ -313,6 +320,39 @@ collections:
               - { name: url, label: 'Website', widget: string, required: false }
               - { name: logo, label: 'Logo', widget: image, required: false }
 
+  - name: teamspage
+    label: '🏐 Teams & Mentors'
+    description: 'Every team and its mentors on the Teams & Mentors page. Only publish a mentor''s phone or email with their permission.'
+    files:
+      - name: teams
+        label: 'Teams'
+        file: 'content/teams.json'
+        fields:
+          - { name: intro, label: 'Page Introduction', widget: text }
+          - name: teams
+            label: 'Teams'
+            label_singular: 'Team'
+            widget: list
+            fields:
+              - { name: name, label: 'Team Name', widget: string }
+              - name: section
+                label: 'Group'
+                widget: select
+                options: ['Adult', 'Juvenile', 'Academy', 'Recreational']
+              - name: code
+                label: "Men's / Ladies / Mixed"
+                widget: select
+                options: ['Men', 'Ladies', 'Mixed']
+              - name: mentors
+                label: 'Mentors'
+                label_singular: 'Mentor'
+                widget: list
+                fields:
+                  - { name: name, label: 'Name', widget: string }
+                  - { name: role, label: 'Role', widget: string, hint: 'e.g. Manager, Coach, Selector' }
+                  - { name: phone, label: 'Phone (optional)', widget: string, required: false }
+                  - { name: email, label: 'Email (optional)', widget: string, required: false }
+
   - name: committee
     label: '👥 Committee'
     description: 'The committee list on the Our Club page. Leave the email blank to show "email to be confirmed".'
@@ -416,3 +456,5 @@ collections:
           - { name: twitter, label: 'X / Twitter URL', widget: string }
           - { name: facebook, label: 'Facebook URL', widget: string }
           - { name: instagram, label: 'Instagram URL', widget: string }
+          - { name: membershipUrl, label: 'Membership link (Foireann)', widget: string, required: false, hint: 'All Join / Become a Member buttons go here' }
+          - { name: whatsappUrl, label: 'WhatsApp Club Notes invite link', widget: string, required: false, hint: 'e.g. https://chat.whatsapp.com/... — a Join button appears on the site once added' }

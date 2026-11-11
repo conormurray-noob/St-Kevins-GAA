@@ -12,6 +12,7 @@ import Community from './pages/Community'
 import Saints from './pages/Saints'
 import Bookings from './pages/Bookings'
 import Sponsors from './pages/Sponsors'
+import Teams from './pages/Teams'
 import ClubInfo from './pages/ClubInfo'
 
 interface NavLink {
@@ -55,6 +56,7 @@ const NAV: NavGroup[] = [
     label: 'Our Club',
     children: [
       { page: 'club', label: 'About & Committee' },
+      { page: 'teams', label: 'Teams & Mentors' },
       { page: 'sponsors', label: 'Sponsors' },
     ],
   },
@@ -225,6 +227,7 @@ export default function App() {
         {page === 'saints' && <Saints />}
         {page === 'bookings' && <Bookings />}
         {page === 'sponsors' && <Sponsors />}
+        {page === 'teams' && <Teams />}
         {page === 'club' && <ClubInfo />}
       </main>
 

@@ -10,6 +10,7 @@ export type Page =
   | 'saints'
   | 'bookings'
   | 'sponsors'
+  | 'teams'
   | 'club'
 
 export interface NewsArticle {
@@ -21,6 +22,21 @@ export interface NewsArticle {
   date: string
   image: string
   featured?: boolean
+  tags: string[]
+}
+
+export interface TeamMentor {
+  name: string
+  role: string
+  phone?: string
+  email?: string
+}
+
+export interface Team {
+  name: string
+  section: string
+  code: 'Men' | 'Ladies' | 'Mixed'
+  mentors: TeamMentor[]
 }
 
 export interface Fixture {
@@ -152,6 +168,8 @@ export interface ClubDetails {
   twitter: string
   facebook: string
   instagram: string
+  membershipUrl?: string
+  whatsappUrl?: string
 }
 
 export interface LottoInfo {

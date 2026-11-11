@@ -9,7 +9,7 @@ Logged 11 November 2026 after the committee presentation.
 | Club history for the website | James O'Donnell | Goes in "Who We Are" on Our Club (admin → ⚙️ Club Details / page text) |
 | Foireann membership booking link | Sinéad | Paste into admin → ⚙️ Club Details → "Membership link"; all Join buttons use it |
 | Mentor contacts for each team | Team mentors / secretary | Admin → 👥 Teams & Mentors. Get each mentor's consent before publishing a phone number |
-| Club Notes WhatsApp invite link | Whoever admins the group | Admin → ⚙️ Club Details → "WhatsApp Club Notes link" |
+| ~~Club Notes WhatsApp invite link~~ | Done | Live on site + QR; print QR at public/whatsapp-club-notes-qr.png |
 | Regenerate the DecapBridge GitHub token | Conor | Token expired 22 Oct 2026; permissions fixed 11 Nov. Regenerate, paste into DecapBridge → site settings |
 | Real photos, policy documents, training schedule, membership prices, Saints opening hours | Committee | See committee question list |
 

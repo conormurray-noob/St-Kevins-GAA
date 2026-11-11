@@ -16,6 +16,7 @@ import type {
   SocialPost,
   SponsorEntry,
   StrategyPillar,
+  Team,
   TrainingSession,
 } from './data'
 import clubJson from '../content/club.json'
@@ -33,6 +34,11 @@ import strategyJson from '../content/strategy.json'
 import policiesJson from '../content/policies.json'
 import saintsJson from '../content/saints.json'
 import sponsorsJson from '../content/sponsors.json'
+import teamsJson from '../content/teams.json'
+
+export const teamsIntro: string = teamsJson.intro
+
+export const teams: Team[] = teamsJson.teams as Team[]
 
 interface NewsFile {
   title: string
@@ -41,6 +47,7 @@ interface NewsFile {
   image: string
   excerpt: string
   featured?: boolean
+  tags?: string[]
   body: string
 }
 
@@ -61,6 +68,7 @@ export const news: NewsArticle[] = Object.entries(newsFiles)
     ...mod.default,
     id: path,
     featured: mod.default.featured ?? false,
+    tags: mod.default.tags ?? [],
     sortKey: mod.default.date,
     date: displayDate(mod.default.date),
   }))
