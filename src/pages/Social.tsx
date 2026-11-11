@@ -1,5 +1,8 @@
-import { useEffect, useState } from 'react'
+import { createElement, useEffect, useState } from 'react'
 import type { SocialPost } from '../data'
+
+// Behold feed for @stkevinsgaa (managed at app.behold.so, free plan)
+const BEHOLD_FEED_ID = 'n7sZCPAg9dxjPbSbbAYj'
 import { club, socialPosts } from '../content'
 import { PageHeader, SectionHeading } from '../components/ui'
 
@@ -23,6 +26,14 @@ function LiveFeeds() {
       // re-scan after client-side navigation back to this page
       // @ts-expect-error twttr is injected by the script above
       window.twttr?.widgets?.load()
+    }
+    // Behold's widget script registers the <behold-widget> element once per page
+    if (!document.getElementById('behold-wjs')) {
+      const b = document.createElement('script')
+      b.id = 'behold-wjs'
+      b.type = 'module'
+      b.src = 'https://w.behold.so/widget.js'
+      document.head.appendChild(b)
     }
   }, [])
 
@@ -66,24 +77,20 @@ function LiveFeeds() {
         </div>
       </div>
 
-      {/* Instagram — no free live-grid embed exists; link out until a feed service is connected */}
+      {/* Instagram — live grid via Behold (Instagram has no free official embed) */}
       <div className="bg-white rounded-2xl border border-coal-100 shadow-sm overflow-hidden">
         <div className="bg-gradient-to-tr from-amber-500 via-club-600 to-purple-600 text-white text-[11px] font-bold uppercase tracking-widest px-4 py-2">
-          Instagram
+          Instagram — Live
         </div>
-        <div className="p-6 text-center">
-          <img src="crest-clubzap.png" alt="" className="h-16 w-16 rounded-full mx-auto ring-1 ring-coal-100" />
-          <p className="text-sm text-coal-500 mt-4 leading-relaxed">
-            Instagram doesn't offer a free live-feed embed — see the club's latest photos and reels
-            on the profile.
-          </p>
+        <div className="p-3">
+          {createElement('behold-widget', { 'feed-id': BEHOLD_FEED_ID })}
           <a
             href={club.instagram}
             target="_blank"
             rel="noreferrer"
-            className="mt-4 inline-block bg-coal-950 hover:bg-coal-800 text-white font-bold uppercase text-sm px-6 py-2.5 rounded-lg transition-colors"
+            className="mt-3 block text-center bg-coal-950 hover:bg-coal-800 text-white font-bold uppercase text-sm px-6 py-2.5 rounded-lg transition-colors"
           >
-            Open Instagram →
+            Follow @stkevinsgaa →
           </a>
         </div>
       </div>

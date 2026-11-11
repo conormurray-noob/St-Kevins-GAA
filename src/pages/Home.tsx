@@ -23,8 +23,8 @@ export default function Home({ navigate }: { navigate: (p: Page) => void }) {
               </span>
             </div>
             <h1 className="font-display text-5xl md:text-7xl uppercase leading-[0.95]">
-              One Club.<br />
-              <span className="text-club-600">One Community.</span>
+              Our Club.<br />
+              <span className="text-club-600">Our Community.</span>
             </h1>
             <p className="mt-6 text-lg text-coal-200 max-w-xl">
               Gaelic football for all ages in the heart of North Kildare — from the
