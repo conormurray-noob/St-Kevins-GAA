@@ -1,44 +1,27 @@
 {
   "fixtures": [
     {
-      "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 3",
-      "team": "Minor",
-      "home": "St. Kevin's",
-      "away": "Cappagh",
-      "date": "Tue 20 Oct",
-      "iso": "2026-10-20",
-      "time": "19:15",
-      "venue": "St Kevin's"
-    },
-    {
-      "competition": "U14 Championship knockout Division 7 - Final",
-      "team": "U14",
-      "home": "St. Kevin's",
-      "away": "Ellistown",
-      "date": "Sat 24 Oct",
-      "iso": "2026-10-24",
-      "time": "TBC",
-      "venue": "TBC"
-    },
-    {
-      "competition": "Life Credit Union U16 B Football Competition Stage 2 - Cup - Shield Final",
-      "team": "U16",
-      "home": "St. Kevin's",
-      "away": "Carbury",
-      "date": "Mon 26 Oct",
-      "iso": "2026-10-26",
-      "time": "14:15",
-      "venue": "Manguard Park Pitch 2"
-    },
-    {
-      "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 4",
-      "team": "Minor",
-      "home": "Milltown",
+      "competition": "Leinster Club Junior Football Championship 2026 - Quarter-Final",
+      "team": "Junior",
+      "home": "St. Brigid's",
       "away": "St. Kevin's",
-      "date": "Sat 31 Oct",
-      "iso": "2026-10-31",
-      "time": "11:00",
-      "venue": "TBC"
+      "date": "Sat 14 Nov",
+      "iso": "2026-11-14",
+      "time": "13:30",
+      "venue": "Daingean GAA"
+    }
+  ],
+  "results": [
+    {
+      "competition": "2026 U23 Football E Competition Semi-Finals - Semi Final",
+      "team": "U23",
+      "home": "St. Kevin's",
+      "away": "Kill",
+      "date": "Sat 7 Nov",
+      "iso": "2026-11-07",
+      "venue": "St Kevin's",
+      "homeScore": "3-19",
+      "awayScore": "2-15"
     },
     {
       "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 5",
@@ -47,11 +30,65 @@
       "away": "St. Kevin's",
       "date": "Sat 7 Nov",
       "iso": "2026-11-07",
-      "time": "11:00",
-      "venue": "Carbury"
-    }
-  ],
-  "results": [
+      "venue": "Carbury",
+      "homeScore": "5-16",
+      "awayScore": "2-3"
+    },
+    {
+      "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 4",
+      "team": "Minor",
+      "home": "Milltown",
+      "away": "St. Kevin's",
+      "date": "Mon 2 Nov",
+      "iso": "2026-11-02",
+      "venue": "Miltown",
+      "homeScore": "5-9",
+      "awayScore": "7-9"
+    },
+    {
+      "competition": "U14 Championship knockout Division 7 - Final",
+      "team": "U14",
+      "home": "St. Kevin's",
+      "away": "Ellistown",
+      "date": "Sun 1 Nov",
+      "iso": "2026-11-01",
+      "venue": "St Laurence's",
+      "homeScore": "2-6",
+      "awayScore": "7-14"
+    },
+    {
+      "competition": "Leinster Club Junior Football Championship 2026 - Round 1",
+      "team": "Junior",
+      "home": "St. Kevin's",
+      "away": "Muckalee",
+      "date": "Sat 31 Oct",
+      "iso": "2026-10-31",
+      "venue": "Manguard Park",
+      "homeScore": "4-20",
+      "awayScore": "2-10"
+    },
+    {
+      "competition": "Life Credit Union U16 B Football Competition Stage 2 - Cup - Shield Final",
+      "team": "U16",
+      "home": "St. Kevin's",
+      "away": "Carbury",
+      "date": "Mon 26 Oct",
+      "iso": "2026-10-26",
+      "venue": "Carbury",
+      "homeScore": "3-9",
+      "awayScore": "1-10"
+    },
+    {
+      "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 3",
+      "team": "Minor",
+      "home": "St. Kevin's",
+      "away": "Cappagh",
+      "date": "Tue 20 Oct",
+      "iso": "2026-10-20",
+      "venue": "St Kevin's",
+      "homeScore": "5-4",
+      "awayScore": "5-14"
+    },
     {
       "competition": "U16 Championship knocout Division 6 - Final",
       "team": "U16",
@@ -62,83 +99,6 @@
       "venue": "Kilcock Main Pitch",
       "homeScore": "6-8",
       "awayScore": "7-7"
-    },
-    {
-      "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 2",
-      "team": "Minor",
-      "home": "St. Kevin's",
-      "away": "Athy",
-      "date": "Tue 13 Oct",
-      "iso": "2026-10-13",
-      "venue": "St Kevin's",
-      "homeScore": "8-7",
-      "awayScore": "1-16"
-    },
-    {
-      "competition": "2026 Osprey Hotel & Spa Reserve Football E Championship Final - Final",
-      "team": "Reserves",
-      "home": "Monasterevan",
-      "away": "St. Kevin's",
-      "date": "Sun 11 Oct",
-      "iso": "2026-10-11",
-      "venue": "Ballyteague",
-      "homeScore": "1-9",
-      "awayScore": "1-6"
-    },
-    {
-      "competition": "Life Credit Union U16 B Football Competition Stage 2 - Cup - Shield Semi Final",
-      "team": "U16",
-      "home": "Moorefield",
-      "away": "St. Kevin's",
-      "date": "Sat 10 Oct",
-      "iso": "2026-10-10",
-      "venue": "St Kevin's",
-      "homeScore": "2-13",
-      "awayScore": "4-12"
-    },
-    {
-      "competition": "U16 Championship knocout Division 6 - Semi Final",
-      "team": "U16",
-      "home": "St. Kevin's",
-      "away": "Milltown",
-      "date": "Thu 8 Oct",
-      "iso": "2026-10-08",
-      "venue": "St Kevin's",
-      "homeScore": "5-20",
-      "awayScore": "0-4"
-    },
-    {
-      "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 1",
-      "team": "Minor",
-      "home": "Teach an Dá Mhíle",
-      "away": "St. Kevin's",
-      "date": "Tue 6 Oct",
-      "iso": "2026-10-06",
-      "venue": "Two Mile House GAA Grounds",
-      "homeScore": "6-11",
-      "awayScore": "5-12"
-    },
-    {
-      "competition": "2026 Tom Cross Junior Football Championship Semi Finals - Semi Finals",
-      "team": "Junior",
-      "home": "Ballymore Eustace",
-      "away": "St. Kevin's",
-      "date": "Sun 4 Oct",
-      "iso": "2026-10-04",
-      "venue": "Manguard Park Pitch 1",
-      "homeScore": "0-16",
-      "awayScore": "2-11"
-    },
-    {
-      "competition": "Life Credit Union U14 C Football Championship Stage 2 - Cup - Shield Semi Final",
-      "team": "U14",
-      "home": "St. Kevin's",
-      "away": "Balyna Juvenile Club",
-      "date": "Sun 4 Oct",
-      "iso": "2026-10-04",
-      "venue": "St Kevin's",
-      "homeScore": "1-11",
-      "awayScore": "4-19"
     }
   ]
 }

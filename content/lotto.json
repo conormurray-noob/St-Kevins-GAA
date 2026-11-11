@@ -1,11 +1,127 @@
 {
-  "currentJackpot": "€8,600",
-  "nextDraw": "October 20, 2026",
+  "currentJackpot": "€9,400",
+  "nextDraw": "November 17, 2026",
   "entriesClose": "Entries close 6pm on draw night",
   "playUrl": "https://stkevinsgfckildare.clubzap.com/categories/lotto/products",
   "draws": [
     {
-      "date": "Tuesday 13 October 2026",
+      "date": "Invalid Date",
+      "numbers": [
+        1,
+        2,
+        3,
+        19
+      ],
+      "jackpot": "€9,200",
+      "jackpotWon": true,
+      "winners": [
+        {
+          "name": "Noelle Hensey (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Breda Byrne c/o Christy Byrne",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Jack Dillon c/o Marie Melia",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Sebrina Moran (Online)",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
+    {
+      "date": "Invalid Date",
+      "numbers": [
+        2,
+        9,
+        18,
+        24
+      ],
+      "jackpot": "€9,000",
+      "jackpotWon": true,
+      "winners": [
+        {
+          "name": "Damien Reilly (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Ciara Cullen (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Jacqui c/o Speedy",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Kathy Casey c/o Ward's Shop",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
+    {
+      "date": "Invalid Date",
+      "numbers": [
+        8,
+        19,
+        25,
+        26
+      ],
+      "jackpot": "€8,800",
+      "jackpotWon": true,
+      "winners": [
+        {
+          "name": "Louise Dee (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Mary Gordon (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Jack Dillion c/o Maria Melia",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Mary Reilly c/o Mary Reilly",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
+    {
+      "date": "Invalid Date",
+      "numbers": [
+        11,
+        12,
+        17,
+        18
+      ],
+      "jackpot": "€8,600",
+      "jackpotWon": true,
+      "winners": [
+        {
+          "name": "Damien & Elaine McNulty (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Dean O Regan (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Adrienne O'Connor c/o Eamonn O'Connor",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Geraldine Kenna c/o Geraldine Kenna",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
+    {
+      "date": "Invalid Date",
       "numbers": [
         4,
         18,
@@ -13,7 +129,7 @@
         22
       ],
       "jackpot": "€8,400",
-      "jackpotWon": false,
+      "jackpotWon": true,
       "winners": [
         {
           "name": "Eammon O'Connor (Online)",
@@ -34,7 +150,7 @@
       ]
     },
     {
-      "date": "Tuesday 6 October 2026",
+      "date": "Invalid Date",
       "numbers": [
         4,
         13,
@@ -42,7 +158,7 @@
         24
       ],
       "jackpot": "€8,200",
-      "jackpotWon": false,
+      "jackpotWon": true,
       "winners": [
         {
           "name": "Linda Delaney (Online)",
@@ -63,7 +179,7 @@
       ]
     },
     {
-      "date": "Tuesday 29 September 2026",
+      "date": "Invalid Date",
       "numbers": [
         13,
         20,
@@ -71,7 +187,7 @@
         28
       ],
       "jackpot": "€8,000",
-      "jackpotWon": false,
+      "jackpotWon": true,
       "winners": [
         {
           "name": "David Casey c/o Alice",
@@ -92,7 +208,7 @@
       ]
     },
     {
-      "date": "Tuesday 22 September 2026",
+      "date": "Invalid Date",
       "numbers": [
         4,
         5,
@@ -100,7 +216,7 @@
         28
       ],
       "jackpot": "€7,800",
-      "jackpotWon": false,
+      "jackpotWon": true,
       "winners": [
         {
           "name": "Adrieene O'Connor (Online)",
@@ -116,122 +232,6 @@
         },
         {
           "name": "Shane Kenna c/o Ger Kenna",
-          "prize": "Lucky Dip"
-        }
-      ]
-    },
-    {
-      "date": "Tuesday 15 September 2026",
-      "numbers": [
-        2,
-        3,
-        6,
-        16
-      ],
-      "jackpot": "€7,600",
-      "jackpotWon": false,
-      "winners": [
-        {
-          "name": "Sean and Michael O'Carrol Jnr c/o Jim O'Donnell",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Susan Daniels (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Briget Casey (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Spot and Pauric Moore c/o JIm O'Donnell",
-          "prize": "Lucky Dip"
-        }
-      ]
-    },
-    {
-      "date": "Tuesday 8 September 2026",
-      "numbers": [
-        9,
-        20,
-        23,
-        25
-      ],
-      "jackpot": "€7,400",
-      "jackpotWon": false,
-      "winners": [
-        {
-          "name": "Therese O’Shea (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Denise Cox (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "B Jones c/o Con Malone",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Marie Gaffney c/o Speedy",
-          "prize": "Lucky Dip"
-        }
-      ]
-    },
-    {
-      "date": "Tuesday 1 September 2026",
-      "numbers": [
-        7,
-        19,
-        22,
-        28
-      ],
-      "jackpot": "€7,200",
-      "jackpotWon": false,
-      "winners": [
-        {
-          "name": "Geraldine Elliott (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Elaine Jacob (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Paddy Ryan c/o Handbag",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Joe and Sarah Dunne c/o Jim O'Donnell",
-          "prize": "Lucky Dip"
-        }
-      ]
-    },
-    {
-      "date": "Tuesday 25 August 2026",
-      "numbers": [
-        3,
-        6,
-        18,
-        19
-      ],
-      "jackpot": "€7,000",
-      "jackpotWon": false,
-      "winners": [
-        {
-          "name": "Edel & Mary McLoughlin",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Peter Mackey (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Laura Dunne c/o Jim O'Donnell",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Noel O'Regan c/o Noel O'Regan",
           "prize": "Lucky Dip"
         }
       ]
