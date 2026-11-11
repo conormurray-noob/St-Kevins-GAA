@@ -52,28 +52,52 @@ export default function Saints() {
         {/* menu */}
         <section>
           <SectionHeading>Menu</SectionHeading>
-          <p className="text-sm text-coal-400 mb-6">{saints.menuNote}</p>
-          <div className="grid gap-6 lg:grid-cols-3">
-            {saints.menu.map((section) => (
-              <div key={section.section} className="bg-white rounded-2xl border border-coal-100 shadow-sm p-6">
-                <h3 className="font-display uppercase text-lg border-b-2 border-club-700 pb-2 mb-4">
-                  {section.section}
-                </h3>
-                <ul className="space-y-4">
-                  {section.items.map((item) => (
-                    <li key={item.name}>
-                      <div className="flex items-baseline justify-between gap-3">
-                        <span className="font-bold text-sm">{item.name}</span>
-                        <span className="font-display text-club-700">{item.price}</span>
-                      </div>
-                      {item.description && (
-                        <div className="text-xs text-coal-400 mt-0.5">{item.description}</div>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="bg-white rounded-3xl border border-coal-100 shadow-sm overflow-hidden">
+            <div className="bg-coal-950 text-white px-8 py-5 flex flex-wrap items-center justify-between gap-3">
+              <span className="font-display uppercase tracking-wide">Everything is available to take away</span>
+              <a href="tel:0870045213" className="bg-club-700 hover:bg-club-600 font-bold px-4 py-2 rounded-lg text-sm transition-colors">
+                Order: 087 004 5213
+              </a>
+            </div>
+            <div className="px-6 md:px-12 py-10 grid gap-x-16 gap-y-12 lg:grid-cols-2">
+              {saints.menu.map((section) => (
+                <div key={section.section}>
+                  <h3 className="font-display uppercase text-xl tracking-wide text-club-700 mb-5 flex items-center gap-3">
+                    {section.section}
+                    <span className="flex-1 h-px bg-club-200" />
+                  </h3>
+                  <ul className="space-y-5">
+                    {section.items.map((item) => (
+                      <li key={item.name}>
+                        <div className="flex items-baseline gap-2">
+                          <span className="font-bold text-coal-900">
+                            {item.name}
+                            {item.allergens && (
+                              <sup className="ml-1 text-[10px] font-semibold text-coal-400">{item.allergens}</sup>
+                            )}
+                          </span>
+                          <span className="flex-1 border-b border-dotted border-coal-300 translate-y-[-4px]" />
+                          <span className="font-semibold text-coal-900 whitespace-nowrap tabular-nums">{item.price}</span>
+                        </div>
+                        {item.description && (
+                          <p className="text-sm text-coal-500 mt-1 leading-relaxed max-w-[38ch] lg:max-w-none">{item.description}</p>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                  {section.note && <p className="mt-4 text-xs italic text-coal-400">{section.note}</p>}
+                </div>
+              ))}
+            </div>
+            <div className="border-t border-coal-100 bg-coal-50 px-6 md:px-12 py-6 space-y-3">
+              <p className="text-sm font-semibold text-coal-700">{saints.menuNote}</p>
+              {saints.allergenKey && (
+                <p className="text-xs text-coal-400 leading-relaxed">
+                  <span className="font-bold uppercase tracking-wider text-coal-500">Allergens: </span>
+                  {saints.allergenKey}
+                </p>
+              )}
+            </div>
           </div>
         </section>
 
@@ -85,7 +109,7 @@ export default function Saints() {
             events — with catering and entertainment options. To book a table or talk about an
             event, contact the managers directly:
           </p>
-          <div className="grid gap-5 sm:grid-cols-2 max-w-2xl">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 max-w-4xl">
             {saints.managers.map((m) => (
               <div key={m.name} className="bg-coal-950 text-white rounded-2xl p-6 relative overflow-hidden">
                 <div className="absolute -right-10 top-0 bottom-0 w-32 sash-stripes opacity-20" />

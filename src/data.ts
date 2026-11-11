@@ -80,7 +80,12 @@ export interface SaintsInfo {
   managers: { name: string; role: string; phone: string }[]
   photos: GalleryImage[]
   menuNote: string
-  menu: { section: string; items: { name: string; description?: string; price: string }[] }[]
+  menu: {
+    section: string
+    note?: string
+    items: { name: string; description?: string; price: string; allergens?: string }[]
+  }[]
+  allergenKey?: string
 }
 
 export interface SponsorEntry {

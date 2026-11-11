@@ -257,12 +257,14 @@ collections:
               - { name: image, label: 'Photo', widget: image }
               - { name: caption, label: 'Caption', widget: string }
           - { name: menuNote, label: 'Menu Note', widget: string }
+          - { name: allergenKey, label: 'Allergen Key', widget: text, required: false }
           - name: menu
             label: 'Menu Sections'
             label_singular: 'Menu Section'
             widget: list
             fields:
               - { name: section, label: 'Section Name', widget: string, hint: 'e.g. Starters' }
+              - { name: note, label: 'Section Note', widget: string, required: false }
               - name: items
                 label: 'Dishes'
                 label_singular: 'Dish'
@@ -271,6 +273,7 @@ collections:
                   - { name: name, label: 'Dish', widget: string }
                   - { name: description, label: 'Description', widget: string, required: false }
                   - { name: price, label: 'Price', widget: string }
+                  - { name: allergens, label: 'Allergens', widget: string, required: false, hint: 'Numbers from the allergen key, e.g. 1, 3, 7' }
 
   - name: communitypage
     label: '🤝 Community'
