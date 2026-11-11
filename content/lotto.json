@@ -5,7 +5,7 @@
   "playUrl": "https://stkevinsgfckildare.clubzap.com/categories/lotto/products",
   "draws": [
     {
-      "date": "Invalid Date",
+      "date": "Tuesday 10 November 2026",
       "numbers": [
         1,
         2,
@@ -13,7 +13,7 @@
         19
       ],
       "jackpot": "€9,200",
-      "jackpotWon": true,
+      "jackpotWon": false,
       "winners": [
         {
           "name": "Noelle Hensey (Online)",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "date": "Invalid Date",
+      "date": "Tuesday 3 November 2026",
       "numbers": [
         2,
         9,
@@ -42,7 +42,7 @@
         24
       ],
       "jackpot": "€9,000",
-      "jackpotWon": true,
+      "jackpotWon": false,
       "winners": [
         {
           "name": "Damien Reilly (Online)",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "date": "Invalid Date",
+      "date": "Tuesday 27 October 2026",
       "numbers": [
         8,
         19,
@@ -71,7 +71,7 @@
         26
       ],
       "jackpot": "€8,800",
-      "jackpotWon": true,
+      "jackpotWon": false,
       "winners": [
         {
           "name": "Louise Dee (Online)",
@@ -92,7 +92,7 @@
       ]
     },
     {
-      "date": "Invalid Date",
+      "date": "Tuesday 20 October 2026",
       "numbers": [
         11,
         12,
@@ -100,7 +100,7 @@
         18
       ],
       "jackpot": "€8,600",
-      "jackpotWon": true,
+      "jackpotWon": false,
       "winners": [
         {
           "name": "Damien & Elaine McNulty (Online)",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "date": "Invalid Date",
+      "date": "Tuesday 13 October 2026",
       "numbers": [
         4,
         18,
@@ -129,7 +129,7 @@
         22
       ],
       "jackpot": "€8,400",
-      "jackpotWon": true,
+      "jackpotWon": false,
       "winners": [
         {
           "name": "Eammon O'Connor (Online)",
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "date": "Invalid Date",
+      "date": "Tuesday 6 October 2026",
       "numbers": [
         4,
         13,
@@ -158,7 +158,7 @@
         24
       ],
       "jackpot": "€8,200",
-      "jackpotWon": true,
+      "jackpotWon": false,
       "winners": [
         {
           "name": "Linda Delaney (Online)",
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "date": "Invalid Date",
+      "date": "Tuesday 29 September 2026",
       "numbers": [
         13,
         20,
@@ -187,7 +187,7 @@
         28
       ],
       "jackpot": "€8,000",
-      "jackpotWon": true,
+      "jackpotWon": false,
       "winners": [
         {
           "name": "David Casey c/o Alice",
@@ -208,7 +208,7 @@
       ]
     },
     {
-      "date": "Invalid Date",
+      "date": "Tuesday 22 September 2026",
       "numbers": [
         4,
         5,
@@ -216,7 +216,7 @@
         28
       ],
       "jackpot": "€7,800",
-      "jackpotWon": true,
+      "jackpotWon": false,
       "winners": [
         {
           "name": "Adrieene O'Connor (Online)",

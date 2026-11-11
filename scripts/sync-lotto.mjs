@@ -8,7 +8,8 @@
 // The `entriesClose` line is left as set in /admin.
 import { readFileSync, writeFileSync } from 'node:fs'
 
-const DRAWS_URL = 'https://stkevinsgfc.ie/draws'
+// ClubZap's own address — keeps working after stkevinsgfc.ie moves to the new site
+const DRAWS_URL = 'https://stkevinsgfckildare.clubzap.com/draws'
 const MAX_DRAWS = 8
 
 const res = await fetch(DRAWS_URL, { headers: { 'user-agent': 'StKevinsGAA-website-sync' } })
@@ -22,10 +23,18 @@ const clean = (s) =>
     .replace(/\s+/g, ' ')
     .trim()
 
-// "07/07/2026" -> "Tuesday 7 July 2026"
-function longDate(dmy) {
-  const [d, m, y] = dmy.split('/').map(Number)
-  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString('en-IE', {
+const MONTHS = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 }
+
+// ClubZap has used both "07/07/2026" and "10 Nov 2026" -> "Tuesday 7 July 2026"
+function longDate(raw) {
+  let d, m, y
+  const numeric = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/)
+  const named = raw.match(/^(\d{1,2})\s+([A-Za-z]{3})[a-z]*\s+(\d{4})$/)
+  if (numeric) [d, m, y] = [Number(numeric[1]), Number(numeric[2]) - 1, Number(numeric[3])]
+  else if (named && MONTHS[named[2].toLowerCase()] !== undefined)
+    [d, m, y] = [Number(named[1]), MONTHS[named[2].toLowerCase()], Number(named[3])]
+  else throw new Error(`unrecognised draw date "${raw}" — page layout may have changed; lotto.json left untouched`)
+  return new Date(Date.UTC(y, m, d)).toLocaleDateString('en-IE', {
     weekday: 'long',
     day: 'numeric',
     month: 'long',
@@ -53,11 +62,14 @@ const playUrl =
 
 const draws = []
 for (const block of html.split('lotto-draw-block').slice(1)) {
-  const date = block.match(/Draw -<\/strong>\s*([\d/]+)/)?.[1]
+  const date = clean(block.match(/Draw -<\/strong>\s*([^<]+)/)?.[1] ?? '')
   if (!date) continue
   const jackpot = clean(block.match(/Jackpot - (€[\d,]+)/)?.[1] ?? '')
-  const midSection = block.slice(0, block.indexOf('lotto-draw-bottom-section'))
-  const jackpotWon = !/No Winner/i.test(midSection)
+  // The first list after the jackpot says who won it: "No Winner" / "No jackpot winner"
+  // or the winner's name. Only treat it as won when there's a name.
+  const jackpotList = block.slice(block.indexOf('Jackpot -')).match(/<ul[^>]*>([\s\S]*?)<\/ul>/)?.[1] ?? ''
+  const jackpotEntry = clean(jackpotList.replace(/<[^>]+>/g, ' '))
+  const jackpotWon = jackpotEntry !== '' && !/\bno\b.*\bwinner\b/i.test(jackpotEntry)
   const luckyDip = block.slice(block.indexOf('Lucky dip'))
   const winners = [...luckyDip.matchAll(/<li[^>]*>([^<]+)<\/li>/g)].map((m) => ({
     name: winnerName(m[1]),
