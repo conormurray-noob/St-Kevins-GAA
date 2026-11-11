@@ -1,235 +1,101 @@
-import { useEffect, useState } from 'react'
-import type { SocialPost } from '../data'
-
-// Behold feed for @stkevinsgaa (managed at app.behold.so, free plan).
-// We render its public JSON ourselves — Behold's own widget renders at zero
-// height inside this app.
-const BEHOLD_FEED_URL = 'https://feeds.behold.so/n7sZCPAg9dxjPbSbbAYj'
-
-interface BeholdPost {
-  id: string
-  permalink: string
-  caption?: string
-  likeCount?: number
-  sizes?: { medium?: { mediaUrl: string } }
-  mediaUrl?: string
-}
-
-function InstagramGrid() {
-  const [posts, setPosts] = useState<BeholdPost[] | null>(null)
-  const [failed, setFailed] = useState(false)
-
-  useEffect(() => {
-    fetch(BEHOLD_FEED_URL)
-      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
-      .then((d: { posts: BeholdPost[] }) => setPosts(d.posts))
-      .catch(() => setFailed(true))
-  }, [])
-
-  if (failed) {
-    return (
-      <p className="text-sm text-coal-500 text-center py-6">
-        Couldn't load Instagram right now — see the latest on the club's profile.
-      </p>
-    )
-  }
-  if (!posts) {
-    return <div className="grid grid-cols-2 gap-2">{[0, 1, 2, 3].map((i) => <div key={i} className="aspect-square rounded-lg bg-coal-100 animate-pulse" />)}</div>
-  }
-  return (
-    <div className="grid grid-cols-2 gap-2">
-      {posts.slice(0, 6).map((p) => (
-        <a
-          key={p.id}
-          href={p.permalink}
-          target="_blank"
-          rel="noreferrer"
-          className="group relative block aspect-square overflow-hidden rounded-lg bg-coal-100"
-        >
-          <img
-            src={p.sizes?.medium?.mediaUrl ?? p.mediaUrl}
-            alt={p.caption?.split('\n')[0] ?? 'Instagram post'}
-            loading="lazy"
-            className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-          <span className="absolute inset-0 bg-coal-950/70 opacity-0 group-hover:opacity-100 transition-opacity p-2 text-white text-[11px] leading-snug overflow-hidden">
-            {p.caption?.split('\n')[0]}
-            {p.likeCount != null && <span className="block mt-1 font-bold">♥ {p.likeCount}</span>}
-          </span>
-        </a>
-      ))}
-    </div>
-  )
-}
-import { club, socialPosts } from '../content'
+import { club } from '../content'
 import { PageHeader, SectionHeading } from '../components/ui'
+import InstagramFeed from '../components/InstagramFeed'
 
-const PLATFORM_META: Record<SocialPost['platform'], { label: string; color: string }> = {
-  twitter: { label: 'X / Twitter', color: 'bg-coal-950' },
-  instagram: { label: 'Instagram', color: 'bg-gradient-to-tr from-amber-500 via-club-600 to-purple-600' },
-  facebook: { label: 'Facebook', color: 'bg-blue-600' },
-}
-
-// Official live embeds — these update themselves, no admin work needed.
-function LiveFeeds() {
-  useEffect(() => {
-    // X's official embedded-timeline script (upgrades the anchor below in place)
-    if (!document.getElementById('twitter-wjs')) {
-      const s = document.createElement('script')
-      s.id = 'twitter-wjs'
-      s.async = true
-      s.src = 'https://platform.twitter.com/widgets.js'
-      document.body.appendChild(s)
-    } else {
-      // re-scan after client-side navigation back to this page
-      // @ts-expect-error twttr is injected by the script above
-      window.twttr?.widgets?.load()
-    }
-  }, [])
-
-  const fbEmbed = `https://www.facebook.com/plugins/page.php?href=${encodeURIComponent(
-    club.facebook,
-  )}&tabs=timeline&width=500&height=640&small_header=true&adapt_container_width=true&hide_cover=false`
-
-  return (
-    <div className="grid gap-6 lg:grid-cols-3 items-start">
-      {/* Facebook — official page plugin, always live */}
-      <div className="bg-white rounded-2xl border border-coal-100 shadow-sm overflow-hidden">
-        <div className="bg-blue-600 text-white text-[11px] font-bold uppercase tracking-widest px-4 py-2">
-          Facebook — Live
-        </div>
-        <iframe
-          src={fbEmbed}
-          title="St. Kevin's GAA on Facebook"
-          width="100%"
-          height="640"
-          style={{ border: 'none', overflow: 'hidden' }}
-          scrolling="no"
-          allow="encrypted-media"
-          loading="lazy"
-        />
-      </div>
-
-      {/* X — official timeline embed; falls back to a profile link if X blocks it */}
-      <div className="bg-white rounded-2xl border border-coal-100 shadow-sm overflow-hidden">
-        <div className="bg-coal-950 text-white text-[11px] font-bold uppercase tracking-widest px-4 py-2">
-          X / Twitter — Live
-        </div>
-        <div className="p-4 min-h-80">
-          <a
-            className="twitter-timeline"
-            data-height="600"
-            data-chrome="noheader nofooter"
-            href={`${club.twitter}?ref_src=twsrc%5Etfw`}
-          >
-            Loading posts from @StKevinsGfc — if nothing appears, open the club on X →
-          </a>
-        </div>
-      </div>
-
-      {/* Instagram — live grid via Behold (Instagram has no free official embed) */}
-      <div className="bg-white rounded-2xl border border-coal-100 shadow-sm overflow-hidden">
-        <div className="bg-gradient-to-tr from-amber-500 via-club-600 to-purple-600 text-white text-[11px] font-bold uppercase tracking-widest px-4 py-2">
-          Instagram — Live
-        </div>
-        <div className="p-3">
-          <InstagramGrid />
-          <a
-            href={club.instagram}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-3 block text-center bg-coal-950 hover:bg-coal-800 text-white font-bold uppercase text-sm px-6 py-2.5 rounded-lg transition-colors"
-          >
-            Follow @stkevinsgaa →
-          </a>
-        </div>
-      </div>
-    </div>
-  )
-}
+// Facebook's page plugin renders at most 500px wide
+const FB_WIDTH = 500
+const FB_HEIGHT = 900
 
 export default function Social() {
-  const [filter, setFilter] = useState<'all' | SocialPost['platform']>('all')
-  const posts = filter === 'all' ? socialPosts : socialPosts.filter((p) => p.platform === filter)
+  const fbEmbed = `https://www.facebook.com/plugins/page.php?href=${encodeURIComponent(
+    club.facebook,
+  )}&tabs=timeline&width=${FB_WIDTH}&height=${FB_HEIGHT}&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false`
 
   return (
     <div>
       <PageHeader
         title="Social Wall"
-        subtitle="The latest from the club's Facebook, X and Instagram — live feeds first, club highlights below."
+        subtitle="The latest from the club's Instagram and Facebook — straight from our accounts, always up to date."
       />
-      <div className="mx-auto max-w-7xl px-4 py-14 space-y-14">
+      <div className="mx-auto max-w-7xl px-4 py-14 space-y-16">
+        {/* Instagram — live grid via Behold */}
         <section>
-          <SectionHeading>Live Feeds</SectionHeading>
-          <LiveFeeds />
-        </section>
-
-        <section>
-          <SectionHeading>Club Highlights</SectionHeading>
-          <p className="text-sm text-coal-400 -mt-2 mb-6">
-            Hand-picked moments, curated by the club in the admin panel.
-          </p>
-          <div className="flex flex-wrap gap-2 mb-8">
-            {(['all', 'twitter', 'instagram', 'facebook'] as const).map((f) => (
-              <button
-                key={f}
-                onClick={() => setFilter(f)}
-                className={`px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide border transition-colors ${
-                  filter === f
-                    ? 'bg-club-700 text-white border-club-700'
-                    : 'bg-white text-coal-500 border-coal-200 hover:border-club-700 hover:text-club-700'
-                }`}
+          <SectionHeading
+            action={
+              <a
+                href={club.instagram}
+                target="_blank"
+                rel="noreferrer"
+                className="text-club-700 font-bold text-sm uppercase hover:underline"
               >
-                {f === 'all' ? 'All Posts' : PLATFORM_META[f].label}
-              </button>
-            ))}
-          </div>
-
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-5 [&>*]:mb-5">
-            {posts.map((post, i) => (
-              <div key={i} className="break-inside-avoid bg-white rounded-2xl border border-coal-100 shadow-sm overflow-hidden">
-                <div className={`${PLATFORM_META[post.platform].color} text-white text-[11px] font-bold uppercase tracking-widest px-4 py-1.5`}>
-                  {PLATFORM_META[post.platform].label}
-                </div>
-                <div className="p-5">
-                  <div className="flex items-center gap-3 mb-3">
-                    <img src="crest-clubzap.png" alt="" className="h-10 w-10 rounded-full ring-1 ring-coal-100" />
-                    <div className="text-sm">
-                      <div className="font-bold">{post.author}</div>
-                      <div className="text-coal-400 text-xs">{post.handle} · {post.date}</div>
-                    </div>
-                  </div>
-                  <p className="text-sm leading-relaxed">{post.text}</p>
-                  {post.image && (
-                    <img src={post.image} alt="" className="mt-3 rounded-xl w-full object-cover" loading="lazy" />
-                  )}
-                  <div className="mt-4 flex gap-5 text-xs text-coal-400 font-semibold">
-                    <span>♥ {post.likes}</span>
-                    <span>💬 {post.comments}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+                @stkevinsgaa →
+              </a>
+            }
+          >
+            Instagram
+          </SectionHeading>
+          <InstagramFeed limit={6} cols={3} />
         </section>
 
-        <div className="bg-coal-950 text-white rounded-2xl p-8 text-center relative overflow-hidden">
-          <div className="absolute -left-16 top-0 bottom-0 w-64 sash-stripes opacity-20" />
-          <div className="relative">
-            <h2 className="font-display text-2xl uppercase">Follow the Club</h2>
-            <p className="text-coal-300 text-sm mt-2">Never miss a score, a draw or a training update.</p>
-            <div className="mt-6 flex flex-wrap justify-center gap-4">
-              <a href={club.twitter} target="_blank" rel="noreferrer" className="bg-white text-coal-950 font-bold px-6 py-2.5 rounded-lg hover:bg-coal-100 transition-colors">
-                @StKevinsGfc on X
-              </a>
-              <a href={club.facebook} target="_blank" rel="noreferrer" className="bg-club-700 font-bold px-6 py-2.5 rounded-lg hover:bg-club-600 transition-colors">
-                Facebook
-              </a>
-              <a href={club.instagram} target="_blank" rel="noreferrer" className="border border-white/40 font-bold px-6 py-2.5 rounded-lg hover:border-white transition-colors">
-                Instagram
+        <div className="grid gap-8 lg:grid-cols-2 items-start">
+          {/* Facebook — official page plugin */}
+          <section>
+            <SectionHeading>Facebook</SectionHeading>
+            <div className="bg-white rounded-2xl border border-coal-100 shadow-sm overflow-hidden">
+              <div className="mx-auto" style={{ maxWidth: FB_WIDTH }}>
+                <iframe
+                  src={fbEmbed}
+                  title="St. Kevin's GAA on Facebook"
+                  width="100%"
+                  height={FB_HEIGHT}
+                  style={{ border: 'none', overflow: 'hidden', display: 'block' }}
+                  allow="encrypted-media"
+                  loading="lazy"
+                />
+              </div>
+              <a
+                href={club.facebook}
+                target="_blank"
+                rel="noreferrer"
+                className="block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold uppercase text-sm px-6 py-3 transition-colors"
+              >
+                See all posts on Facebook →
               </a>
             </div>
-          </div>
+            <p className="mt-2 text-xs text-coal-400">
+              Some Facebook posts (reels, shared posts) only show on Facebook itself.
+            </p>
+          </section>
+
+          {/* X — link card only: X blocks logged-out timeline embeds (HTTP 429)
+              and its API is paid, so a live feed isn't viable */}
+          <section>
+            <SectionHeading>X / Twitter</SectionHeading>
+            <div className="bg-coal-950 text-white rounded-2xl p-8 relative overflow-hidden">
+              <div className="absolute -right-16 top-0 bottom-0 w-64 sash-stripes opacity-20" />
+              <div className="relative">
+                <div className="flex items-center gap-4">
+                  <img src="crest-clubzap.png" alt="" className="h-16 w-16 rounded-full bg-white p-0.5" />
+                  <div>
+                    <div className="font-display text-xl uppercase">CLG Naomh Caoimhín</div>
+                    <div className="text-coal-300 text-sm">@StKevinsGfc</div>
+                  </div>
+                </div>
+                <p className="mt-5 text-coal-300 text-sm leading-relaxed">
+                  Live scores, team news and match-day updates — follow the club on X so you never
+                  miss a result.
+                </p>
+                <a
+                  href={club.twitter}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-6 inline-block bg-white text-coal-950 hover:bg-coal-100 font-bold uppercase text-sm px-6 py-3 rounded-lg transition-colors"
+                >
+                  Follow @StKevinsGfc on X →
+                </a>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>

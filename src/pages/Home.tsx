@@ -1,6 +1,7 @@
 import { type Page } from '../data'
-import { news, fixtures, results, lotto, sponsors, socialPosts } from '../content'
+import { news, fixtures, results, lotto, sponsors } from '../content'
 import { Badge, FixtureCard, LottoBall, SectionHeading } from '../components/ui'
+import InstagramFeed from '../components/InstagramFeed'
 
 export default function Home({ navigate }: { navigate: (p: Page) => void }) {
   const featured = news.find((n) => n.featured) ?? news[0]
@@ -176,23 +177,7 @@ export default function Home({ navigate }: { navigate: (p: Page) => void }) {
         >
           From Our Socials
         </SectionHeading>
-        <div className="grid gap-5 md:grid-cols-3">
-          {socialPosts.slice(0, 3).map((post, i) => (
-            <div key={i} className="bg-white rounded-2xl border border-coal-100 shadow-sm p-5">
-              <div className="flex items-center gap-3 mb-3">
-                <img src="crest-clubzap.png" alt="" className="h-9 w-9 rounded-full bg-white ring-1 ring-coal-100" />
-                <div className="text-sm">
-                  <div className="font-bold">{post.author}</div>
-                  <div className="text-coal-400 text-xs">{post.handle} · {post.date}</div>
-                </div>
-              </div>
-              <p className="text-sm leading-relaxed">{post.text}</p>
-              {post.image && (
-                <img src={post.image} alt="" className="mt-3 rounded-xl w-full h-44 object-cover" />
-              )}
-            </div>
-          ))}
-        </div>
+        <InstagramFeed limit={3} cols={3} />
       </section>
 
       {/* Sponsors */}

@@ -25,7 +25,7 @@ every change is saved with history and can be undone.
 | 🏐 Fixtures & Results | Filled automatically from Kildare GAA. Only touch for challenge games. | Automatic |
 | 🏋️ Training Schedule | The weekly training grid (repeats every week). | Start of season |
 | 📷 Photo Gallery | Photos on the Gallery page. Click "Photo" to upload from your phone. | After big days |
-| 💬 Social Wall | The posts shown on the Social page. | Optional |
+| — | Social page is automatic: live Instagram + Facebook. | — |
 | 🍽 Saints Bar & Restaurant | Hours, menu, photos, managers' numbers. | When things change |
 | 🤝 Community | Bowls, pilates, darts, walkway — activities at the club. | When things change |
 | 🏟 Facilities & Bookings | The bookable facilities and their rates. | Rarely |

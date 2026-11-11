@@ -199,31 +199,6 @@ collections:
               - { name: image, label: 'Photo', widget: image }
               - { name: caption, label: 'Caption', widget: string }
 
-  - name: socialwall
-    label: '💬 Social Wall'
-    description: 'The posts shown on the Social page (until live Instagram/X embeds are wired in).'
-    files:
-      - name: social
-        label: 'Social Posts'
-        file: 'content/social.json'
-        fields:
-          - name: posts
-            label: 'Posts'
-            label_singular: 'Post'
-            widget: list
-            fields:
-              - name: platform
-                label: 'Platform'
-                widget: select
-                options: ['twitter', 'instagram', 'facebook']
-              - { name: author, label: 'Account Name', widget: string }
-              - { name: handle, label: 'Handle', widget: string }
-              - { name: date, label: 'When', widget: string, hint: 'e.g. 2h, 3d' }
-              - { name: text, label: 'Post Text', widget: text }
-              - { name: image, label: 'Photo', widget: image, required: false }
-              - { name: likes, label: 'Likes', widget: number, value_type: int, default: 0 }
-              - { name: comments, label: 'Comments', widget: number, value_type: int, default: 0 }
-
   - name: saintsbar
     label: '🍽 Saints Bar & Restaurant'
     description: 'Everything on the Saints Bar and Restaurant page — hours, photos, menu, and the managers'' contact details.'
