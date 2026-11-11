@@ -26,6 +26,32 @@ Logged 11 November 2026 after the committee presentation.
 - [ ] Optional: email-to-website news posting
 - [ ] Optional: Stripe payments for astro hire
 
+## Research (11 Nov 2026) — ClubZap alternatives
+
+- Lotto licensing sits with the club (District Court/Garda permit), not the
+  software, until the new regulator (GRAI) takes over, expected 2027–28.
+- **Recommended:** keep ClubZap for the lotto (and the app if push notifications
+  matter); drop its website. Ask ClubZap for a lotto-only price.
+- If leaving ClubZap entirely: Clubforce Fundraising (€25/mo, established
+  Irish GAA lotto) or cheaper link-outs: TidyHQ (free / €49/mo + fees),
+  LocalLotto / KlubFunder. Get an Irish permit-compliance statement + full
+  fee rate before switching.
+- Not suitable: Pitchero lotto (UK only), Spond/Teamer (no lotto),
+  Club & County (mainly a website — duplicates ours).
+
+## Research (11 Nov 2026) — pitch booking
+
+- **Recommended:** SimplyBook.me Basic (~€12/mo; Standard ~€25/mo over 100
+  bookings/mo) — astro/hall as resources, Stripe for external hire, approval,
+  embed widget, Google Calendar sync → public iCal the site calendar can merge.
+  Confirm Stripe + approval together in the 7-day trial.
+- GAA-specific: ClubManager 365 (from €15–20/mo, approval +€5) — better for
+  team allocation than paid public hire.
+- Too expensive: Bookteq (from £100/mo), Skedda/AllBooked ($99+/mo).
+- Free fallback: a public Google Calendar per facility (site merges the iCal
+  feeds) + request form + Stripe Payment Link for astro hire.
+- SportsKey is ClubZap's booking partner — worth a quote if keeping ClubZap.
+
 ## Domain switch: stkevinsgfc.ie (Blacknight)
 
 What's there today (checked 11 Nov 2026):
