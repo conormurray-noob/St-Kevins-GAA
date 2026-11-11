@@ -48,26 +48,30 @@ export default function GetInvolved() {
             days, or helping with events and fundraising — there's a place for you, regardless of
             experience. Leave your details and someone from the club will be in touch.
           </p>
-          {(club.whatsappUrl || club.membershipUrl) && (
-            <div className="mt-6 flex flex-wrap gap-3">
-              {club.whatsappUrl && (
+          {club.whatsappUrl && (
+            <div className="mt-6 flex items-center gap-5 bg-white/10 rounded-2xl p-4 max-w-md">
+              <QrCode value={club.whatsappUrl} size={104} />
+              <div className="flex-1 min-w-0">
+                <div className="font-display uppercase text-sm leading-tight">Club Notes on WhatsApp</div>
+                <p className="text-club-100 text-xs mt-1 mb-3">
+                  Scan the code with your phone camera, or tap the button.
+                </p>
                 <a
                   href={club.whatsappUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5b] text-white font-bold px-5 py-3 rounded-lg transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5b] text-white font-bold text-sm px-4 py-2.5 rounded-lg transition-colors"
                 >
-                  <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current" aria-hidden="true">
                     <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z" />
                   </svg>
-                  Join Club Notes on WhatsApp
+                  Join the group
                 </a>
-              )}
-              {club.whatsappUrl && (
-                <div className="hidden md:block w-full">
-                  <QrCode value={club.whatsappUrl} size={120} label="Scan to join Club Notes" />
-                </div>
-              )}
+              </div>
+            </div>
+          )}
+          {club.membershipUrl && (
+            <div className="mt-4">
               {club.membershipUrl && (
                 <a
                   href={club.membershipUrl}
