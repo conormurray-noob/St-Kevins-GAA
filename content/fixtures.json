@@ -1,5 +1,6 @@
 {
-  "fixtures": [
+  "fixtures": [],
+  "results": [
     {
       "competition": "Leinster Club Junior Football Championship 2026 - Quarter-Final",
       "code": "Men",
@@ -8,11 +9,10 @@
       "away": "St. Kevin's",
       "date": "Sat 14 Nov",
       "iso": "2026-11-14",
-      "time": "13:30",
-      "venue": "Daingean GAA"
-    }
-  ],
-  "results": [
+      "venue": "Daingean GAA",
+      "homeScore": "2-12",
+      "awayScore": "1-11"
+    },
     {
       "competition": "2026 U23 Football E Competition Semi-Finals - Semi Final",
       "code": "Men",
@@ -96,18 +96,6 @@
       "venue": "St Kevin's",
       "homeScore": "5-4",
       "awayScore": "5-14"
-    },
-    {
-      "competition": "U16 Championship knocout Division 6 - Final",
-      "code": "Ladies",
-      "team": "U16 Girls",
-      "home": "St. Kevin's",
-      "away": "Rathcoffey",
-      "date": "Sat 17 Oct",
-      "iso": "2026-10-17",
-      "venue": "Kilcock Main Pitch",
-      "homeScore": "6-8",
-      "awayScore": "7-7"
     }
   ]
 }
