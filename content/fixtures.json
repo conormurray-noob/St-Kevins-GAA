@@ -1,5 +1,17 @@
 {
-  "fixtures": [],
+  "fixtures": [
+    {
+      "competition": "2026 U23 Football E Competition Final - Final",
+      "code": "Men",
+      "team": "U23",
+      "home": "St. Kevin's",
+      "away": "Nurney",
+      "date": "Sat 21 Nov",
+      "iso": "2026-11-21",
+      "time": "18:30",
+      "venue": "Manguard Park Pitch 1"
+    }
+  ],
   "results": [
     {
       "competition": "Leinster Club Junior Football Championship 2026 - Quarter-Final",
