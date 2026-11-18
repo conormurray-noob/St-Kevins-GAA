@@ -1,9 +1,38 @@
 {
-  "currentJackpot": "€9,400",
-  "nextDraw": "November 17, 2026",
+  "currentJackpot": "€9,600",
+  "nextDraw": "November 24, 2026",
   "entriesClose": "Entries close 6pm on draw night",
   "playUrl": "https://stkevinsgfckildare.clubzap.com/categories/lotto/products",
   "draws": [
+    {
+      "date": "Tuesday 17 November 2026",
+      "numbers": [
+        1,
+        3,
+        6,
+        17
+      ],
+      "jackpot": "€9,400",
+      "jackpotWon": false,
+      "winners": [
+        {
+          "name": "Brian Condon (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Georgina & Trevor Carew (Online)",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Aine Browne c/o Paddy Browne",
+          "prize": "Lucky Dip"
+        },
+        {
+          "name": "Mick Kenny c/o Jim O'Donnell",
+          "prize": "Lucky Dip"
+        }
+      ]
+    },
     {
       "date": "Tuesday 10 November 2026",
       "numbers": [
@@ -203,35 +232,6 @@
         },
         {
           "name": "Miriam Bagnall Gordon (Online)",
-          "prize": "Lucky Dip"
-        }
-      ]
-    },
-    {
-      "date": "Tuesday 22 September 2026",
-      "numbers": [
-        4,
-        5,
-        10,
-        28
-      ],
-      "jackpot": "€7,800",
-      "jackpotWon": false,
-      "winners": [
-        {
-          "name": "Adrieene O'Connor (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Audrey Salmon (Online)",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Hannah Fagan c/o Speedy",
-          "prize": "Lucky Dip"
-        },
-        {
-          "name": "Shane Kenna c/o Ger Kenna",
           "prize": "Lucky Dip"
         }
       ]
