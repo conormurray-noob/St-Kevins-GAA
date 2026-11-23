@@ -1,5 +1,6 @@
 {
-  "fixtures": [
+  "fixtures": [],
+  "results": [
     {
       "competition": "2026 U23 Football E Competition Final - Final",
       "code": "Men",
@@ -8,11 +9,10 @@
       "away": "Nurney",
       "date": "Sat 21 Nov",
       "iso": "2026-11-21",
-      "time": "18:30",
-      "venue": "Manguard Park Pitch 1"
-    }
-  ],
-  "results": [
+      "venue": "Manguard Park Pitch 1",
+      "homeScore": "1-17",
+      "awayScore": "4-10"
+    },
     {
       "competition": "Leinster Club Junior Football Championship 2026 - Quarter-Final",
       "code": "Men",
@@ -96,18 +96,6 @@
       "venue": "Carbury",
       "homeScore": "3-9",
       "awayScore": "1-10"
-    },
-    {
-      "competition": "2026 MINOR CHAMPIONSHIP - Division 4 - Round 3",
-      "code": "Ladies",
-      "team": "Minor Ladies",
-      "home": "St. Kevin's",
-      "away": "Cappagh",
-      "date": "Tue 20 Oct",
-      "iso": "2026-10-20",
-      "venue": "St Kevin's",
-      "homeScore": "5-4",
-      "awayScore": "5-14"
     }
   ]
 }
